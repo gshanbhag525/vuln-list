@@ -1,6 +1,6 @@
 {
   "id": "GHSA-45x7-px36-x8w8",
-  "modified": "2025-03-31T16:04:37.126857Z",
+  "modified": "2025-11-05T01:03:11.943552Z",
   "published": "2023-12-18T19:22:09Z",
   "aliases": [
     "CGA-v7c4-rcx6-g4vr",
@@ -185,6 +185,7 @@
     "CGA-j4w7-f2rx-qgg7",
     "CGA-j54h-h9g9-4f32",
     "CGA-j7jc-q6vr-4q67",
+    "CGA-j9g4-wqrv-h676",
     "CGA-jfjh-g47x-52j2",
     "CGA-jgc7-cr25-pj56",
     "CGA-jmh8-qfq3-hx5m",
@@ -340,7 +341,7 @@
           "type": "SEMVER",
           "events": [
             {
-              "introduced": "0"
+              "introduced": "0.1.0"
             },
             {
               "fixed": "0.17.0"
@@ -400,7 +401,31 @@
         "3.1.0",
         "3.2.0",
         "3.3.0",
-        "3.3.1"
+        "3.3.1",
+        "3.3.2"
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/12/GHSA-45x7-px36-x8w8/GHSA-45x7-px36-x8w8.json"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "golang.org/x/crypto",
+        "purl": "pkg:golang/golang.org/x/crypto"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "0.0.0-20231218163308-9d2ee975ef9f"
+            }
+          ]
+        }
       ],
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/12/GHSA-45x7-px36-x8w8/GHSA-45x7-px36-x8w8.json"
@@ -418,7 +443,7 @@
     },
     {
       "type": "WEB",
-      "url": "https://github.com/ssh-mitm/ssh-mitm/issues/165"
+      "url": "https://github.com/mwiede/jsch/issues/457"
     },
     {
       "type": "WEB",
@@ -426,15 +451,7 @@
     },
     {
       "type": "WEB",
-      "url": "https://github.com/proftpd/proftpd/issues/456"
-    },
-    {
-      "type": "WEB",
       "url": "https://github.com/hierynomus/sshj/issues/916"
-    },
-    {
-      "type": "WEB",
-      "url": "https://github.com/paramiko/paramiko/issues/2337#issuecomment-1887642773"
     },
     {
       "type": "WEB",
@@ -442,15 +459,11 @@
     },
     {
       "type": "WEB",
+      "url": "https://github.com/paramiko/paramiko/issues/2337#issuecomment-1887642773"
+    },
+    {
+      "type": "WEB",
       "url": "https://github.com/cyd01/KiTTY/issues/520"
-    },
-    {
-      "type": "WEB",
-      "url": "https://github.com/PowerShell/Win32-OpenSSH/issues/2189"
-    },
-    {
-      "type": "WEB",
-      "url": "https://github.com/mwiede/jsch/issues/457"
     },
     {
       "type": "WEB",
@@ -458,11 +471,15 @@
     },
     {
       "type": "WEB",
-      "url": "https://github.com/libssh2/libssh2/pull/1291"
+      "url": "https://github.com/proftpd/proftpd/issues/456"
     },
     {
       "type": "WEB",
-      "url": "https://github.com/mwiede/jsch/pull/461"
+      "url": "https://github.com/PowerShell/Win32-OpenSSH/issues/2189"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/ssh-mitm/ssh-mitm/issues/165"
     },
     {
       "type": "WEB",
@@ -470,7 +487,19 @@
     },
     {
       "type": "WEB",
+      "url": "https://github.com/mwiede/jsch/pull/461"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/libssh2/libssh2/pull/1291"
+    },
+    {
+      "type": "WEB",
       "url": "https://github.com/TeraTermProject/teraterm/commit/7279fbd6ef4d0c8bdd6a90af4ada2899d786eec0"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/mscdex/ssh2/commit/97b223f8891b96d6fc054df5ab1d5a1a545da2a3"
     },
     {
       "type": "WEB",
@@ -478,7 +507,7 @@
     },
     {
       "type": "WEB",
-      "url": "https://github.com/mscdex/ssh2/commit/97b223f8891b96d6fc054df5ab1d5a1a545da2a3"
+      "url": "https://github.com/jtesta/ssh-audit/commit/8e972c5e94b460379fe0c7d20209c16df81538a5"
     },
     {
       "type": "WEB",
@@ -490,43 +519,7 @@
     },
     {
       "type": "WEB",
-      "url": "https://github.com/jtesta/ssh-audit/commit/8e972c5e94b460379fe0c7d20209c16df81538a5"
-    },
-    {
-      "type": "WEB",
-      "url": "https://security-tracker.debian.org/tracker/CVE-2023-48795"
-    },
-    {
-      "type": "WEB",
-      "url": "https://security-tracker.debian.org/tracker/source-package/libssh2"
-    },
-    {
-      "type": "WEB",
-      "url": "https://roumenpetrov.info/secsh/#news20231220"
-    },
-    {
-      "type": "WEB",
-      "url": "https://security-tracker.debian.org/tracker/source-package/proftpd-dfsg"
-    },
-    {
-      "type": "WEB",
-      "url": "https://security-tracker.debian.org/tracker/source-package/trilead-ssh2"
-    },
-    {
-      "type": "WEB",
-      "url": "https://security.gentoo.org/glsa/202312-16"
-    },
-    {
-      "type": "WEB",
-      "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2024-0002"
-    },
-    {
-      "type": "WEB",
-      "url": "https://oryx-embedded.com/download/#changelog"
-    },
-    {
-      "type": "WEB",
-      "url": "https://nova.app/releases/#v11.8"
+      "url": "https://www.vicarius.io/vsociety/posts/cve-2023-48795-mitigate-openssh-vulnerability"
     },
     {
       "type": "WEB",
@@ -534,27 +527,35 @@
     },
     {
       "type": "WEB",
-      "url": "https://news.ycombinator.com/item?id=38685286"
+      "url": "https://security-tracker.debian.org/tracker/source-package/trilead-ssh2"
     },
     {
       "type": "WEB",
-      "url": "https://news.ycombinator.com/item?id=38684904"
+      "url": "https://nova.app/releases/#v11.8"
     },
     {
       "type": "WEB",
-      "url": "https://nest.pijul.com/pijul/thrussh/changes/D6H7OWTTMHHX6BTB3B6MNBOBX2L66CBL4LGSEUSAI2MCRCJDQFRQC"
+      "url": "https://security-tracker.debian.org/tracker/source-package/proftpd-dfsg"
     },
     {
       "type": "WEB",
-      "url": "https://matt.ucc.asn.au/dropbear/CHANGES"
+      "url": "https://security-tracker.debian.org/tracker/source-package/libssh2"
     },
     {
       "type": "WEB",
-      "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QI3EHAHABFQK7OABNCSF5GMYP6TONTI7"
+      "url": "https://security-tracker.debian.org/tracker/CVE-2023-48795"
     },
     {
       "type": "WEB",
-      "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/MKQRBF3DWMWPH36LBCOBUTSIZRTPEZXB"
+      "url": "https://roumenpetrov.info/secsh/#news20231220"
+    },
+    {
+      "type": "WEB",
+      "url": "https://oryx-embedded.com/download/#changelog"
+    },
+    {
+      "type": "WEB",
+      "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2024-0002"
     },
     {
       "type": "WEB",
@@ -562,23 +563,75 @@
     },
     {
       "type": "WEB",
-      "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/L5Y6MNNVAPIJSXJERQ6PKZVCIUXSNJK7"
+      "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/MKQRBF3DWMWPH36LBCOBUTSIZRTPEZXB"
     },
     {
       "type": "WEB",
-      "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/KMZCVGUGJZZVDPCVDA7TEB22VUCNEXDD"
+      "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/QI3EHAHABFQK7OABNCSF5GMYP6TONTI7"
     },
     {
       "type": "WEB",
-      "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/KEOTKBUPZXHE3F352JBYNTSNRXYLWD6P"
+      "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/33XHJUB6ROFUOH2OQNENFROTVH6MHSHA"
     },
     {
       "type": "WEB",
-      "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/I724O3LSRCPO4WNVIXTZCT4VVRMXMMSG"
+      "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3JIMLVBDWOP4FUPXPTB4PGHHIOMGFLQE"
     },
     {
       "type": "WEB",
-      "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/HYEDEXIKFKTUJIN43RG4B7T5ZS6MHUSP"
+      "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/3YQLUQWLIHDB5QCXQEX7HXHAWMOKPP5O"
+    },
+    {
+      "type": "WEB",
+      "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/6Y74KVCPEPT4MVU3LHDWCNNOXOE5ZLUR"
+    },
+    {
+      "type": "WEB",
+      "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/APYIXIQOVDCRWLHTGB4VYMAUIAQLKYJ3"
+    },
+    {
+      "type": "WEB",
+      "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/C3AFMZ6MH2UHHOPIWT5YLSFV3D2VB3AC"
+    },
+    {
+      "type": "WEB",
+      "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/HYEDEXIKFKTUJIN43RG4B7T5ZS6MHUSP"
+    },
+    {
+      "type": "WEB",
+      "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I724O3LSRCPO4WNVIXTZCT4VVRMXMMSG"
+    },
+    {
+      "type": "WEB",
+      "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/L5Y6MNNVAPIJSXJERQ6PKZVCIUXSNJK7"
+    },
+    {
+      "type": "WEB",
+      "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/LZQVUHWVWRH73YBXUQJOD6CKHDQBU3DM"
+    },
+    {
+      "type": "WEB",
+      "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MKQRBF3DWMWPH36LBCOBUTSIZRTPEZXB"
+    },
+    {
+      "type": "WEB",
+      "url": "https://matt.ucc.asn.au/dropbear/CHANGES"
+    },
+    {
+      "type": "WEB",
+      "url": "https://nest.pijul.com/pijul/thrussh/changes/D6H7OWTTMHHX6BTB3B6MNBOBX2L66CBL4LGSEUSAI2MCRCJDQFRQC"
+    },
+    {
+      "type": "WEB",
+      "url": "https://news.ycombinator.com/item?id=38684904"
+    },
+    {
+      "type": "WEB",
+      "url": "https://news.ycombinator.com/item?id=38685286"
+    },
+    {
+      "type": "WEB",
+      "url": "https://www.vicarius.io/vsociety/posts/cve-2023-48795-detect-openssh-vulnerabilit"
     },
     {
       "type": "WEB",
@@ -686,7 +739,27 @@
     },
     {
       "type": "WEB",
-      "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/F7EYCFQCTSGJXWO3ZZ44MGKFC5HA7G3Y"
+      "url": "https://security.gentoo.org/glsa/202312-16"
+    },
+    {
+      "type": "WEB",
+      "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/L5Y6MNNVAPIJSXJERQ6PKZVCIUXSNJK7"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/warp-tech/russh/releases/tag/v0.40.2"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/warp-tech/russh"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/ronf/asyncssh/tags"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/ronf/asyncssh/blob/develop/docs/changes.rst"
     },
     {
       "type": "WEB",
@@ -786,6 +859,26 @@
     },
     {
       "type": "WEB",
+      "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/KMZCVGUGJZZVDPCVDA7TEB22VUCNEXDD"
+    },
+    {
+      "type": "WEB",
+      "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/KEOTKBUPZXHE3F352JBYNTSNRXYLWD6P"
+    },
+    {
+      "type": "WEB",
+      "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/I724O3LSRCPO4WNVIXTZCT4VVRMXMMSG"
+    },
+    {
+      "type": "WEB",
+      "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/HYEDEXIKFKTUJIN43RG4B7T5ZS6MHUSP"
+    },
+    {
+      "type": "WEB",
+      "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/F7EYCFQCTSGJXWO3ZZ44MGKFC5HA7G3Y"
+    },
+    {
+      "type": "WEB",
       "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/CHHITS4PUOZAKFIUBQAQZC7JWXMOYE4B"
     },
     {
@@ -819,6 +912,18 @@
     {
       "type": "WEB",
       "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/33XHJUB6ROFUOH2OQNENFROTVH6MHSHA"
+    },
+    {
+      "type": "WEB",
+      "url": "https://lists.debian.org/debian-lts-announce/2025/04/msg00028.html"
+    },
+    {
+      "type": "WEB",
+      "url": "https://lists.debian.org/debian-lts-announce/2024/11/msg00032.html"
+    },
+    {
+      "type": "WEB",
+      "url": "https://lists.debian.org/debian-lts-announce/2024/09/msg00042.html"
     },
     {
       "type": "WEB",
@@ -863,22 +968,6 @@
     {
       "type": "WEB",
       "url": "https://gitlab.com/libssh/libssh-mirror/-/tags"
-    },
-    {
-      "type": "WEB",
-      "url": "https://github.com/warp-tech/russh/releases/tag/v0.40.2"
-    },
-    {
-      "type": "PACKAGE",
-      "url": "https://github.com/warp-tech/russh"
-    },
-    {
-      "type": "WEB",
-      "url": "https://github.com/ronf/asyncssh/tags"
-    },
-    {
-      "type": "WEB",
-      "url": "https://github.com/ronf/asyncssh/blob/develop/docs/changes.rst"
     },
     {
       "type": "WEB",

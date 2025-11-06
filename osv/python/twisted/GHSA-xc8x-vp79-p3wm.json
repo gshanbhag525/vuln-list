@@ -1,6 +1,6 @@
 {
   "id": "GHSA-xc8x-vp79-p3wm",
-  "modified": "2024-11-18T23:23:23.344638Z",
+  "modified": "2025-11-04T17:02:09.832366Z",
   "published": "2023-10-25T21:15:13Z",
   "aliases": [
     "CVE-2023-46137",
@@ -146,6 +146,10 @@
     {
       "type": "PACKAGE",
       "url": "https://github.com/twisted/twisted"
+    },
+    {
+      "type": "WEB",
+      "url": "https://lists.debian.org/debian-lts-announce/2024/11/msg00028.html"
     }
   ]
 }

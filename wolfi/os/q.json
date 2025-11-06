@@ -4,6 +4,8 @@
     "0": [
       "CVE-2023-45283",
       "CVE-2023-45284",
+      "CVE-2025-47907",
+      "GHSA-j5pm-7495-qmr3",
       "GHSA-rq3x-83w4-p28c",
       "GHSA-vvjp-q62m-2vph"
     ],
@@ -86,6 +88,14 @@
     "0.19.2-r9": [
       "CVE-2024-45337",
       "GHSA-v778-237x-gjrc"
+    ],
+    "0.19.9-r1": [
+      "CVE-2025-59530",
+      "GHSA-47m2-4cr7-mhcw"
+    ],
+    "0.19.9-r2": [
+      "CVE-2025-58187",
+      "GHSA-frhw-mqj2-wxw2"
     ]
   },
   "apkurl": "{{urlprefix}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk",

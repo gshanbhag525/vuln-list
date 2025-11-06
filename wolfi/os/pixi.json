@@ -29,6 +29,18 @@
     ],
     "0.45.0-r2": [
       "GHSA-pg9f-39pc-qf8g"
+    ],
+    "0.51.0-r0": [
+      "CVE-2025-55159",
+      "GHSA-qx2v-8332-m4fv"
+    ],
+    "0.53.0-r1": [
+      "CVE-2025-58160",
+      "GHSA-xwfj-jgwm-7wp5"
+    ],
+    "0.57.0-r1": [
+      "CVE-2025-62518",
+      "GHSA-j5gw-2vrg-8fgx"
     ]
   },
   "apkurl": "{{urlprefix}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk",

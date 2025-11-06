@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container bci/openjdk-devel:11-2019-2002,Container bci/openjdk:11-2019-2002,Container bci/openjdk:latest-2019-2002,Container containers/apache-tomcat:10.1-openjdk11-2019-2002,Container containers/apache-tomcat:9-openjdk11-2019-2002,Container suse/manager/5.0/x86_64/server-attestation:latest-2019-2002,Container suse/manager/5.0/x86_64/server:latest-2019-2002,Image SLES15-SP1-Manager-4-0-Azure-BYOS-Server-2019-2002,Image SLES15-SP1-Manager-4-0-EC2-HVM-BYOS-Server-2019-2002,Image SLES15-SP1-Manager-4-0-GCE-BYOS-Server-2019-2002,Image SLES15-SP2-Manager-4-1-Server-BYOS-Azure-2019-2002,Image SLES15-SP2-Manager-4-1-Server-BYOS-EC2-HVM-2019-2002,Image SLES15-SP2-Manager-4-1-Server-BYOS-GCE-2019-2002,Image SLES15-SP3-Manager-4-2-Server-BYOS-Azure-2019-2002,Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM-2019-2002,Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE-2019-2002,Image SLES15-SP4-Manager-Server-4-3-2019-2002,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2019-2002,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2019-2002,Image SLES15-SP4-Manager-Server-4-3-BYOS-2019-2002,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2019-2002,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2019-2002,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2019-2002,Image SLES15-SP4-Manager-Server-4-3-EC2-llc-2019-2002,Image SLES15-SP4-Manager-Server-4-3-EC2-ltd-2019-2002,Image server-attestation-image-2019-2002,Image server-image-2019-2002,SUSE-2019-2002,SUSE-SLE-Module-Basesystem-15-2019-2002,SUSE-SLE-Module-Basesystem-15-SP1-2019-2002,SUSE-SLE-Module-Development-Tools-OBS-15-2019-2002,SUSE-SLE-Module-Development-Tools-OBS-15-SP1-2019-2002",
+      "Text": "Container bci/openjdk-devel:11-2019-2002,Container bci/openjdk:11-2019-2002,Container bci/openjdk:latest-2019-2002,Container containers/apache-tomcat:10.1-openjdk11-2019-2002,Container containers/apache-tomcat:9-openjdk11-2019-2002,Container suse/manager/5.0/x86_64/server-attestation:latest-2019-2002,Container suse/multi-linux-manager/5.1/x86_64/server-attestation:latest-2019-2002,Image SLES15-SP1-Manager-4-0-Azure-BYOS-Server-2019-2002,Image SLES15-SP1-Manager-4-0-EC2-HVM-BYOS-Server-2019-2002,Image SLES15-SP1-Manager-4-0-GCE-BYOS-Server-2019-2002,Image SLES15-SP2-Manager-4-1-Server-BYOS-Azure-2019-2002,Image SLES15-SP2-Manager-4-1-Server-BYOS-EC2-HVM-2019-2002,Image SLES15-SP2-Manager-4-1-Server-BYOS-GCE-2019-2002,Image SLES15-SP3-Manager-4-2-Server-BYOS-Azure-2019-2002,Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM-2019-2002,Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE-2019-2002,Image SLES15-SP4-Manager-Server-4-3-2019-2002,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2019-2002,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2019-2002,Image SLES15-SP4-Manager-Server-4-3-BYOS-2019-2002,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2019-2002,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2019-2002,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2019-2002,Image SLES15-SP4-Manager-Server-4-3-EC2-llc-2019-2002,Image SLES15-SP4-Manager-Server-4-3-EC2-ltd-2019-2002,SUSE-2019-2002,SUSE-SLE-Module-Basesystem-15-2019-2002,SUSE-SLE-Module-Basesystem-15-SP1-2019-2002,SUSE-SLE-Module-Development-Tools-OBS-15-2019-2002,SUSE-SLE-Module-Development-Tools-OBS-15-SP1-2019-2002",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -99,13 +99,8 @@
         "RelationType": "Default Component Of"
       },
       {
-        "ProductReference": "java-11-openjdk-11.0.4.0-3.33.1",
-        "RelatesToProductReference": "Container suse/manager/5.0/x86_64/server:latest",
-        "RelationType": "Default Component Of"
-      },
-      {
         "ProductReference": "java-11-openjdk-headless-11.0.4.0-3.33.1",
-        "RelatesToProductReference": "Container suse/manager/5.0/x86_64/server:latest",
+        "RelatesToProductReference": "Container suse/multi-linux-manager/5.1/x86_64/server-attestation:latest",
         "RelationType": "Default Component Of"
       },
       {
@@ -286,21 +281,6 @@
       {
         "ProductReference": "java-11-openjdk-headless-11.0.4.0-3.33.1",
         "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
-        "RelationType": "Default Component Of"
-      },
-      {
-        "ProductReference": "java-11-openjdk-headless-11.0.4.0-3.33.1",
-        "RelatesToProductReference": "Image server-attestation-image",
-        "RelationType": "Default Component Of"
-      },
-      {
-        "ProductReference": "java-11-openjdk-11.0.4.0-3.33.1",
-        "RelatesToProductReference": "Image server-image",
-        "RelationType": "Default Component Of"
-      },
-      {
-        "ProductReference": "java-11-openjdk-headless-11.0.4.0-3.33.1",
-        "RelatesToProductReference": "Image server-image",
         "RelationType": "Default Component Of"
       },
       {
@@ -475,8 +455,7 @@
             "Container containers/apache-tomcat:9-openjdk11:java-11-openjdk-11.0.4.0-3.33.1",
             "Container containers/apache-tomcat:9-openjdk11:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Container suse/manager/5.0/x86_64/server-attestation:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Container suse/manager/5.0/x86_64/server:latest:java-11-openjdk-11.0.4.0-3.33.1",
-            "Container suse/manager/5.0/x86_64/server:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
+            "Container suse/multi-linux-manager/5.1/x86_64/server-attestation:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-Azure-BYOS-Server:java-11-openjdk-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-Azure-BYOS-Server:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-EC2-HVM-BYOS-Server:java-11-openjdk-11.0.4.0-3.33.1",
@@ -513,9 +492,6 @@
             "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-11.0.4.0-3.33.1",
             "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Image server-attestation-image:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Image server-image:java-11-openjdk-11.0.4.0-3.33.1",
-            "Image server-image:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-demo-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-devel-11.0.4.0-3.33.1",
@@ -571,8 +547,7 @@
             "Container containers/apache-tomcat:9-openjdk11:java-11-openjdk-11.0.4.0-3.33.1",
             "Container containers/apache-tomcat:9-openjdk11:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Container suse/manager/5.0/x86_64/server-attestation:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Container suse/manager/5.0/x86_64/server:latest:java-11-openjdk-11.0.4.0-3.33.1",
-            "Container suse/manager/5.0/x86_64/server:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
+            "Container suse/multi-linux-manager/5.1/x86_64/server-attestation:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-Azure-BYOS-Server:java-11-openjdk-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-Azure-BYOS-Server:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-EC2-HVM-BYOS-Server:java-11-openjdk-11.0.4.0-3.33.1",
@@ -609,9 +584,6 @@
             "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-11.0.4.0-3.33.1",
             "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Image server-attestation-image:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Image server-image:java-11-openjdk-11.0.4.0-3.33.1",
-            "Image server-image:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-demo-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-devel-11.0.4.0-3.33.1",
@@ -634,7 +606,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "low"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -667,8 +639,7 @@
             "Container containers/apache-tomcat:9-openjdk11:java-11-openjdk-11.0.4.0-3.33.1",
             "Container containers/apache-tomcat:9-openjdk11:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Container suse/manager/5.0/x86_64/server-attestation:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Container suse/manager/5.0/x86_64/server:latest:java-11-openjdk-11.0.4.0-3.33.1",
-            "Container suse/manager/5.0/x86_64/server:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
+            "Container suse/multi-linux-manager/5.1/x86_64/server-attestation:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-Azure-BYOS-Server:java-11-openjdk-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-Azure-BYOS-Server:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-EC2-HVM-BYOS-Server:java-11-openjdk-11.0.4.0-3.33.1",
@@ -705,9 +676,6 @@
             "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-11.0.4.0-3.33.1",
             "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Image server-attestation-image:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Image server-image:java-11-openjdk-11.0.4.0-3.33.1",
-            "Image server-image:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-demo-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-devel-11.0.4.0-3.33.1",
@@ -763,8 +731,7 @@
             "Container containers/apache-tomcat:9-openjdk11:java-11-openjdk-11.0.4.0-3.33.1",
             "Container containers/apache-tomcat:9-openjdk11:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Container suse/manager/5.0/x86_64/server-attestation:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Container suse/manager/5.0/x86_64/server:latest:java-11-openjdk-11.0.4.0-3.33.1",
-            "Container suse/manager/5.0/x86_64/server:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
+            "Container suse/multi-linux-manager/5.1/x86_64/server-attestation:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-Azure-BYOS-Server:java-11-openjdk-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-Azure-BYOS-Server:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-EC2-HVM-BYOS-Server:java-11-openjdk-11.0.4.0-3.33.1",
@@ -801,9 +768,6 @@
             "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-11.0.4.0-3.33.1",
             "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Image server-attestation-image:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Image server-image:java-11-openjdk-11.0.4.0-3.33.1",
-            "Image server-image:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-demo-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-devel-11.0.4.0-3.33.1",
@@ -859,8 +823,7 @@
             "Container containers/apache-tomcat:9-openjdk11:java-11-openjdk-11.0.4.0-3.33.1",
             "Container containers/apache-tomcat:9-openjdk11:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Container suse/manager/5.0/x86_64/server-attestation:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Container suse/manager/5.0/x86_64/server:latest:java-11-openjdk-11.0.4.0-3.33.1",
-            "Container suse/manager/5.0/x86_64/server:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
+            "Container suse/multi-linux-manager/5.1/x86_64/server-attestation:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-Azure-BYOS-Server:java-11-openjdk-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-Azure-BYOS-Server:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-EC2-HVM-BYOS-Server:java-11-openjdk-11.0.4.0-3.33.1",
@@ -897,9 +860,6 @@
             "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-11.0.4.0-3.33.1",
             "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Image server-attestation-image:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Image server-image:java-11-openjdk-11.0.4.0-3.33.1",
-            "Image server-image:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-demo-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-devel-11.0.4.0-3.33.1",
@@ -955,8 +915,7 @@
             "Container containers/apache-tomcat:9-openjdk11:java-11-openjdk-11.0.4.0-3.33.1",
             "Container containers/apache-tomcat:9-openjdk11:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Container suse/manager/5.0/x86_64/server-attestation:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Container suse/manager/5.0/x86_64/server:latest:java-11-openjdk-11.0.4.0-3.33.1",
-            "Container suse/manager/5.0/x86_64/server:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
+            "Container suse/multi-linux-manager/5.1/x86_64/server-attestation:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-Azure-BYOS-Server:java-11-openjdk-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-Azure-BYOS-Server:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-EC2-HVM-BYOS-Server:java-11-openjdk-11.0.4.0-3.33.1",
@@ -993,9 +952,6 @@
             "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-11.0.4.0-3.33.1",
             "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Image server-attestation-image:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Image server-image:java-11-openjdk-11.0.4.0-3.33.1",
-            "Image server-image:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-demo-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-devel-11.0.4.0-3.33.1",
@@ -1047,8 +1003,7 @@
             "Container containers/apache-tomcat:9-openjdk11:java-11-openjdk-11.0.4.0-3.33.1",
             "Container containers/apache-tomcat:9-openjdk11:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Container suse/manager/5.0/x86_64/server-attestation:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Container suse/manager/5.0/x86_64/server:latest:java-11-openjdk-11.0.4.0-3.33.1",
-            "Container suse/manager/5.0/x86_64/server:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
+            "Container suse/multi-linux-manager/5.1/x86_64/server-attestation:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-Azure-BYOS-Server:java-11-openjdk-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-Azure-BYOS-Server:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-EC2-HVM-BYOS-Server:java-11-openjdk-11.0.4.0-3.33.1",
@@ -1085,9 +1040,6 @@
             "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-11.0.4.0-3.33.1",
             "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Image server-attestation-image:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Image server-image:java-11-openjdk-11.0.4.0-3.33.1",
-            "Image server-image:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-demo-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-devel-11.0.4.0-3.33.1",
@@ -1139,8 +1091,7 @@
             "Container containers/apache-tomcat:9-openjdk11:java-11-openjdk-11.0.4.0-3.33.1",
             "Container containers/apache-tomcat:9-openjdk11:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Container suse/manager/5.0/x86_64/server-attestation:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Container suse/manager/5.0/x86_64/server:latest:java-11-openjdk-11.0.4.0-3.33.1",
-            "Container suse/manager/5.0/x86_64/server:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
+            "Container suse/multi-linux-manager/5.1/x86_64/server-attestation:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-Azure-BYOS-Server:java-11-openjdk-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-Azure-BYOS-Server:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-EC2-HVM-BYOS-Server:java-11-openjdk-11.0.4.0-3.33.1",
@@ -1177,9 +1128,6 @@
             "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-11.0.4.0-3.33.1",
             "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Image server-attestation-image:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Image server-image:java-11-openjdk-11.0.4.0-3.33.1",
-            "Image server-image:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-demo-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-devel-11.0.4.0-3.33.1",
@@ -1202,7 +1150,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "low"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -1247,8 +1195,7 @@
             "Container containers/apache-tomcat:9-openjdk11:java-11-openjdk-11.0.4.0-3.33.1",
             "Container containers/apache-tomcat:9-openjdk11:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Container suse/manager/5.0/x86_64/server-attestation:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Container suse/manager/5.0/x86_64/server:latest:java-11-openjdk-11.0.4.0-3.33.1",
-            "Container suse/manager/5.0/x86_64/server:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
+            "Container suse/multi-linux-manager/5.1/x86_64/server-attestation:latest:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-Azure-BYOS-Server:java-11-openjdk-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-Azure-BYOS-Server:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP1-Manager-4-0-EC2-HVM-BYOS-Server:java-11-openjdk-11.0.4.0-3.33.1",
@@ -1285,9 +1232,6 @@
             "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-11.0.4.0-3.33.1",
             "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Image server-attestation-image:java-11-openjdk-headless-11.0.4.0-3.33.1",
-            "Image server-image:java-11-openjdk-11.0.4.0-3.33.1",
-            "Image server-image:java-11-openjdk-headless-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-demo-11.0.4.0-3.33.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP1:java-11-openjdk-devel-11.0.4.0-3.33.1",

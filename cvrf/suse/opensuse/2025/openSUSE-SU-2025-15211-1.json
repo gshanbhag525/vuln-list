@@ -1,0 +1,164 @@
+{
+  "Title": "clamav-1.4.3-1.1 on GA media",
+  "Tracking": {
+    "ID": "openSUSE-SU-2025:15211-1",
+    "Status": "Final",
+    "Version": "1",
+    "InitialReleaseDate": "2025-07-03T00:00:00Z",
+    "CurrentReleaseDate": "2025-07-03T00:00:00Z",
+    "RevisionHistory": [
+      {
+        "Number": "1",
+        "Date": "2025-07-03T00:00:00Z",
+        "Description": "current"
+      }
+    ]
+  },
+  "Notes": [
+    {
+      "Text": "clamav-1.4.3-1.1 on GA media",
+      "Title": "Topic",
+      "Type": "Summary"
+    },
+    {
+      "Text": "These are all security issues fixed in the clamav-1.4.3-1.1 package on the GA media of openSUSE Tumbleweed.",
+      "Title": "Details",
+      "Type": "General"
+    },
+    {
+      "Text": "The CVRF data is provided by SUSE under the Creative Commons License 4.0 with Attribution (CC-BY-4.0).",
+      "Title": "Terms of Use",
+      "Type": "Legal Disclaimer"
+    },
+    {
+      "Text": "openSUSE-Tumbleweed-2025-15211",
+      "Title": "Patchnames",
+      "Type": "Details"
+    }
+  ],
+  "ProductTree": {
+    "Relationships": [
+      {
+        "ProductReference": "clamav-1.4.3-1.1",
+        "RelatesToProductReference": "openSUSE Tumbleweed",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "clamav-devel-1.4.3-1.1",
+        "RelatesToProductReference": "openSUSE Tumbleweed",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "clamav-docs-html-1.4.3-1.1",
+        "RelatesToProductReference": "openSUSE Tumbleweed",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "clamav-milter-1.4.3-1.1",
+        "RelatesToProductReference": "openSUSE Tumbleweed",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libclamav12-1.4.3-1.1",
+        "RelatesToProductReference": "openSUSE Tumbleweed",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libclammspack0-1.4.3-1.1",
+        "RelatesToProductReference": "openSUSE Tumbleweed",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libfreshclam3-1.4.3-1.1",
+        "RelatesToProductReference": "openSUSE Tumbleweed",
+        "RelationType": "Default Component Of"
+      }
+    ]
+  },
+  "References": [
+    {
+      "URL": "https://www.suse.com/support/security/rating/",
+      "Description": "SUSE Security Ratings"
+    },
+    {
+      "URL": "https://www.suse.com/security/cve/CVE-2025-20234/",
+      "Description": "SUSE CVE CVE-2025-20234 page"
+    },
+    {
+      "URL": "https://www.suse.com/security/cve/CVE-2025-20260/",
+      "Description": "SUSE CVE CVE-2025-20260 page"
+    }
+  ],
+  "Vulnerabilities": [
+    {
+      "CVE": "CVE-2025-20234",
+      "Description": "A vulnerability in Universal Disk Format (UDF) processing of ClamAV could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.\n\nThis vulnerability is due to a memory overread during UDF file scanning. An attacker could exploit this vulnerability by submitting a crafted file containing UDF content to be scanned by ClamAV on an affected device. A successful exploit could allow the attacker to terminate the ClamAV scanning process, resulting in a DoS condition on the affected software.\nFor a description of this vulnerability, see the .",
+      "Threats": [
+        {
+          "Type": "Impact",
+          "Severity": "moderate"
+        }
+      ],
+      "References": [
+        {
+          "URL": "https://www.suse.com/security/cve/CVE-2025-20234.html",
+          "Description": "CVE-2025-20234"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1245055",
+          "Description": "SUSE Bug 1245055"
+        }
+      ],
+      "ProductStatuses": [
+        {
+          "Type": "Fixed",
+          "ProductID": [
+            "openSUSE Tumbleweed:clamav-1.4.3-1.1",
+            "openSUSE Tumbleweed:clamav-devel-1.4.3-1.1",
+            "openSUSE Tumbleweed:clamav-docs-html-1.4.3-1.1",
+            "openSUSE Tumbleweed:clamav-milter-1.4.3-1.1",
+            "openSUSE Tumbleweed:libclamav12-1.4.3-1.1",
+            "openSUSE Tumbleweed:libclammspack0-1.4.3-1.1",
+            "openSUSE Tumbleweed:libfreshclam3-1.4.3-1.1"
+          ]
+        }
+      ],
+      "CVSSScoreSets": {}
+    },
+    {
+      "CVE": "CVE-2025-20260",
+      "Description": "A vulnerability in the PDF scanning processes of ClamAV could allow an unauthenticated, remote attacker to cause a buffer overflow condition, cause a denial of service (DoS) condition, or execute arbitrary code on an affected device.\n\nThis vulnerability exists because memory buffers are allocated incorrectly when PDF files are processed. An attacker could exploit this vulnerability by submitting a crafted PDF file to be scanned by ClamAV on an affected device. A successful exploit could allow the attacker to trigger a buffer overflow, likely resulting in the termination of the ClamAV scanning process and a DoS condition on the affected software. Although unproven, there is also a possibility that an attacker could leverage the buffer overflow to execute arbitrary code with the privileges of the ClamAV process.",
+      "Threats": [
+        {
+          "Type": "Impact",
+          "Severity": "moderate"
+        }
+      ],
+      "References": [
+        {
+          "URL": "https://www.suse.com/security/cve/CVE-2025-20260.html",
+          "Description": "CVE-2025-20260"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1245054",
+          "Description": "SUSE Bug 1245054"
+        }
+      ],
+      "ProductStatuses": [
+        {
+          "Type": "Fixed",
+          "ProductID": [
+            "openSUSE Tumbleweed:clamav-1.4.3-1.1",
+            "openSUSE Tumbleweed:clamav-devel-1.4.3-1.1",
+            "openSUSE Tumbleweed:clamav-docs-html-1.4.3-1.1",
+            "openSUSE Tumbleweed:clamav-milter-1.4.3-1.1",
+            "openSUSE Tumbleweed:libclamav12-1.4.3-1.1",
+            "openSUSE Tumbleweed:libclammspack0-1.4.3-1.1",
+            "openSUSE Tumbleweed:libfreshclam3-1.4.3-1.1"
+          ]
+        }
+      ],
+      "CVSSScoreSets": {}
+    }
+  ]
+}

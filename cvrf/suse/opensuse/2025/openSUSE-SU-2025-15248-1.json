@@ -1,0 +1,233 @@
+{
+  "Title": "nix-2.29.1-1.1 on GA media",
+  "Tracking": {
+    "ID": "openSUSE-SU-2025:15248-1",
+    "Status": "Final",
+    "Version": "1",
+    "InitialReleaseDate": "2025-07-03T00:00:00Z",
+    "CurrentReleaseDate": "2025-07-03T00:00:00Z",
+    "RevisionHistory": [
+      {
+        "Number": "1",
+        "Date": "2025-07-03T00:00:00Z",
+        "Description": "current"
+      }
+    ]
+  },
+  "Notes": [
+    {
+      "Text": "nix-2.29.1-1.1 on GA media",
+      "Title": "Topic",
+      "Type": "Summary"
+    },
+    {
+      "Text": "These are all security issues fixed in the nix-2.29.1-1.1 package on the GA media of openSUSE Tumbleweed.",
+      "Title": "Details",
+      "Type": "General"
+    },
+    {
+      "Text": "The CVRF data is provided by SUSE under the Creative Commons License 4.0 with Attribution (CC-BY-4.0).",
+      "Title": "Terms of Use",
+      "Type": "Legal Disclaimer"
+    },
+    {
+      "Text": "openSUSE-Tumbleweed-2025-15248",
+      "Title": "Patchnames",
+      "Type": "Details"
+    }
+  ],
+  "ProductTree": {
+    "Relationships": [
+      {
+        "ProductReference": "nix-2.29.1-1.1",
+        "RelatesToProductReference": "openSUSE Tumbleweed",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "nix-bash-completion-2.29.1-1.1",
+        "RelatesToProductReference": "openSUSE Tumbleweed",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "nix-devel-2.29.1-1.1",
+        "RelatesToProductReference": "openSUSE Tumbleweed",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "nix-doc-2.29.1-1.1",
+        "RelatesToProductReference": "openSUSE Tumbleweed",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "nix-fish-completion-2.29.1-1.1",
+        "RelatesToProductReference": "openSUSE Tumbleweed",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "nix-zsh-completion-2.29.1-1.1",
+        "RelatesToProductReference": "openSUSE Tumbleweed",
+        "RelationType": "Default Component Of"
+      }
+    ]
+  },
+  "References": [
+    {
+      "URL": "https://www.suse.com/support/security/rating/",
+      "Description": "SUSE Security Ratings"
+    },
+    {
+      "URL": "https://www.suse.com/security/cve/CVE-2025-46415/",
+      "Description": "SUSE CVE CVE-2025-46415 page"
+    },
+    {
+      "URL": "https://www.suse.com/security/cve/CVE-2025-52991/",
+      "Description": "SUSE CVE CVE-2025-52991 page"
+    },
+    {
+      "URL": "https://www.suse.com/security/cve/CVE-2025-52992/",
+      "Description": "SUSE CVE CVE-2025-52992 page"
+    },
+    {
+      "URL": "https://www.suse.com/security/cve/CVE-2025-52993/",
+      "Description": "SUSE CVE CVE-2025-52993 page"
+    }
+  ],
+  "Vulnerabilities": [
+    {
+      "CVE": "CVE-2025-46415",
+      "Description": "A race condition in the Nix, Lix, and Guix package managers allows the removal of content from arbitrary folders. This affects Nix before 2.24.15, 2.26.4, 2.28.4, and 2.29.1; Lix before 2.91.2, 2.92.2, and 2.93.1; and Guix before 1.4.0-38.0e79d5b.",
+      "Threats": [
+        {
+          "Type": "Impact",
+          "Severity": "moderate"
+        }
+      ],
+      "References": [
+        {
+          "URL": "https://www.suse.com/security/cve/CVE-2025-46415.html",
+          "Description": "CVE-2025-46415"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1245319",
+          "Description": "SUSE Bug 1245319"
+        }
+      ],
+      "ProductStatuses": [
+        {
+          "Type": "Fixed",
+          "ProductID": [
+            "openSUSE Tumbleweed:nix-2.29.1-1.1",
+            "openSUSE Tumbleweed:nix-bash-completion-2.29.1-1.1",
+            "openSUSE Tumbleweed:nix-devel-2.29.1-1.1",
+            "openSUSE Tumbleweed:nix-doc-2.29.1-1.1",
+            "openSUSE Tumbleweed:nix-fish-completion-2.29.1-1.1",
+            "openSUSE Tumbleweed:nix-zsh-completion-2.29.1-1.1"
+          ]
+        }
+      ],
+      "CVSSScoreSets": {}
+    },
+    {
+      "CVE": "CVE-2025-52991",
+      "Description": "The Nix, Lix, and Guix package managers default to using temporary build directories in a world-readable and world-writable location. This allows standard users to deceive the package manager into using directories with pre-existing content, potentially leading to unauthorized actions or data manipulation. This affects Nix before 2.24.15, 2.26.4, 2.28.4, and 2.29.1; Lix before 2.91.2, 2.92.2, and 2.93.1; and Guix before 1.4.0-38.0e79d5b.",
+      "Threats": [
+        {
+          "Type": "Impact",
+          "Severity": "moderate"
+        }
+      ],
+      "References": [
+        {
+          "URL": "https://www.suse.com/security/cve/CVE-2025-52991.html",
+          "Description": "CVE-2025-52991"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1245319",
+          "Description": "SUSE Bug 1245319"
+        }
+      ],
+      "ProductStatuses": [
+        {
+          "Type": "Fixed",
+          "ProductID": [
+            "openSUSE Tumbleweed:nix-2.29.1-1.1",
+            "openSUSE Tumbleweed:nix-bash-completion-2.29.1-1.1",
+            "openSUSE Tumbleweed:nix-devel-2.29.1-1.1",
+            "openSUSE Tumbleweed:nix-doc-2.29.1-1.1",
+            "openSUSE Tumbleweed:nix-fish-completion-2.29.1-1.1",
+            "openSUSE Tumbleweed:nix-zsh-completion-2.29.1-1.1"
+          ]
+        }
+      ],
+      "CVSSScoreSets": {}
+    },
+    {
+      "CVE": "CVE-2025-52992",
+      "Description": "The Nix, Lix, and Guix package managers fail to properly set permissions when a derivation build fails. This may allow arbitrary processes to modify the content of a store outside of the build sandbox. This affects Nix before 2.24.15, 2.26.4, 2.28.4, and 2.29.1; Lix before 2.91.2, 2.92.2, and 2.93.1; and Guix before 1.4.0-38.0e79d5b.",
+      "Threats": [
+        {
+          "Type": "Impact",
+          "Severity": "moderate"
+        }
+      ],
+      "References": [
+        {
+          "URL": "https://www.suse.com/security/cve/CVE-2025-52992.html",
+          "Description": "CVE-2025-52992"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1245319",
+          "Description": "SUSE Bug 1245319"
+        }
+      ],
+      "ProductStatuses": [
+        {
+          "Type": "Fixed",
+          "ProductID": [
+            "openSUSE Tumbleweed:nix-2.29.1-1.1",
+            "openSUSE Tumbleweed:nix-bash-completion-2.29.1-1.1",
+            "openSUSE Tumbleweed:nix-devel-2.29.1-1.1",
+            "openSUSE Tumbleweed:nix-doc-2.29.1-1.1",
+            "openSUSE Tumbleweed:nix-fish-completion-2.29.1-1.1",
+            "openSUSE Tumbleweed:nix-zsh-completion-2.29.1-1.1"
+          ]
+        }
+      ],
+      "CVSSScoreSets": {}
+    },
+    {
+      "CVE": "CVE-2025-52993",
+      "Description": "A race condition in the Nix, Lix, and Guix package managers enables changing the ownership of arbitrary files to the UID and GID of the build user (e.g., nixbld* or guixbuild*). This affects Nix before 2.24.15, 2.26.4, 2.28.4, and 2.29.1; Lix before 2.91.2, 2.92.2, and 2.93.1; and Guix before 1.4.0-38.0e79d5b.",
+      "Threats": [
+        {
+          "Type": "Impact",
+          "Severity": "moderate"
+        }
+      ],
+      "References": [
+        {
+          "URL": "https://www.suse.com/security/cve/CVE-2025-52993.html",
+          "Description": "CVE-2025-52993"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1245319",
+          "Description": "SUSE Bug 1245319"
+        }
+      ],
+      "ProductStatuses": [
+        {
+          "Type": "Fixed",
+          "ProductID": [
+            "openSUSE Tumbleweed:nix-2.29.1-1.1",
+            "openSUSE Tumbleweed:nix-bash-completion-2.29.1-1.1",
+            "openSUSE Tumbleweed:nix-devel-2.29.1-1.1",
+            "openSUSE Tumbleweed:nix-doc-2.29.1-1.1",
+            "openSUSE Tumbleweed:nix-fish-completion-2.29.1-1.1",
+            "openSUSE Tumbleweed:nix-zsh-completion-2.29.1-1.1"
+          ]
+        }
+      ],
+      "CVSSScoreSets": {}
+    }
+  ]
+}

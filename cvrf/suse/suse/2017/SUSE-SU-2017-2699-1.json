@@ -786,7 +786,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "critical"
+          "Severity": "important"
         }
       ],
       "References": [
@@ -830,7 +830,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "critical"
+          "Severity": "important"
         }
       ],
       "References": [
@@ -969,6 +969,10 @@
         {
           "URL": "https://bugzilla.suse.com/898603",
           "Description": "SUSE Bug 898603"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/898762",
+          "Description": "SUSE Bug 898762"
         },
         {
           "URL": "https://bugzilla.suse.com/898812",
@@ -2382,7 +2386,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "moderate"
+          "Severity": "low"
         }
       ],
       "References": [
@@ -2938,7 +2942,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "low"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -3310,7 +3314,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "low"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -3434,7 +3438,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "low"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -3478,7 +3482,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "low"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -3738,7 +3742,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "low"
+          "Severity": "important"
         }
       ],
       "References": [
@@ -4534,7 +4538,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "low"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -4750,7 +4754,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "moderate"
+          "Severity": "low"
         }
       ],
       "References": [
@@ -4886,7 +4890,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "low"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -5110,7 +5114,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "low"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -5378,7 +5382,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "moderate"
+          "Severity": "critical"
         }
       ],
       "References": [
@@ -5442,7 +5446,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "moderate"
+          "Severity": "critical"
         }
       ],
       "References": [
@@ -5502,7 +5506,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "moderate"
+          "Severity": "low"
         }
       ],
       "References": [
@@ -5630,7 +5634,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "low"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -5694,7 +5698,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "moderate"
+          "Severity": "important"
         }
       ],
       "References": [
@@ -6182,7 +6186,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "important"
+          "Severity": "moderate"
         }
       ],
       "References": [

@@ -1,0 +1,171 @@
+{
+  "Title": "radare2-5.9.8-3.1 on GA media",
+  "Tracking": {
+    "ID": "openSUSE-SU-2025:15292-1",
+    "Status": "Final",
+    "Version": "1",
+    "InitialReleaseDate": "2025-07-03T00:00:00Z",
+    "CurrentReleaseDate": "2025-07-03T00:00:00Z",
+    "RevisionHistory": [
+      {
+        "Number": "1",
+        "Date": "2025-07-03T00:00:00Z",
+        "Description": "current"
+      }
+    ]
+  },
+  "Notes": [
+    {
+      "Text": "radare2-5.9.8-3.1 on GA media",
+      "Title": "Topic",
+      "Type": "Summary"
+    },
+    {
+      "Text": "These are all security issues fixed in the radare2-5.9.8-3.1 package on the GA media of openSUSE Tumbleweed.",
+      "Title": "Details",
+      "Type": "General"
+    },
+    {
+      "Text": "The CVRF data is provided by SUSE under the Creative Commons License 4.0 with Attribution (CC-BY-4.0).",
+      "Title": "Terms of Use",
+      "Type": "Legal Disclaimer"
+    },
+    {
+      "Text": "openSUSE-Tumbleweed-2025-15292",
+      "Title": "Patchnames",
+      "Type": "Details"
+    }
+  ],
+  "ProductTree": {
+    "Relationships": [
+      {
+        "ProductReference": "radare2-5.9.8-3.1",
+        "RelatesToProductReference": "openSUSE Tumbleweed",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "radare2-devel-5.9.8-3.1",
+        "RelatesToProductReference": "openSUSE Tumbleweed",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "radare2-zsh-completion-5.9.8-3.1",
+        "RelatesToProductReference": "openSUSE Tumbleweed",
+        "RelationType": "Default Component Of"
+      }
+    ]
+  },
+  "References": [
+    {
+      "URL": "https://www.suse.com/support/security/rating/",
+      "Description": "SUSE Security Ratings"
+    },
+    {
+      "URL": "https://www.suse.com/security/cve/CVE-2025-1744/",
+      "Description": "SUSE CVE CVE-2025-1744 page"
+    },
+    {
+      "URL": "https://www.suse.com/security/cve/CVE-2025-1864/",
+      "Description": "SUSE CVE CVE-2025-1864 page"
+    },
+    {
+      "URL": "https://www.suse.com/security/cve/CVE-2025-5641/",
+      "Description": "SUSE CVE CVE-2025-5641 page"
+    }
+  ],
+  "Vulnerabilities": [
+    {
+      "CVE": "CVE-2025-1744",
+      "Description": "Out-of-bounds Write vulnerability in radareorg radare2 allows \n\nheap-based buffer over-read or buffer overflow.This issue affects radare2: before \u003c5.9.9.",
+      "Threats": [
+        {
+          "Type": "Impact",
+          "Severity": "moderate"
+        }
+      ],
+      "References": [
+        {
+          "URL": "https://www.suse.com/security/cve/CVE-2025-1744.html",
+          "Description": "CVE-2025-1744"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1238075",
+          "Description": "SUSE Bug 1238075"
+        }
+      ],
+      "ProductStatuses": [
+        {
+          "Type": "Fixed",
+          "ProductID": [
+            "openSUSE Tumbleweed:radare2-5.9.8-3.1",
+            "openSUSE Tumbleweed:radare2-devel-5.9.8-3.1",
+            "openSUSE Tumbleweed:radare2-zsh-completion-5.9.8-3.1"
+          ]
+        }
+      ],
+      "CVSSScoreSets": {}
+    },
+    {
+      "CVE": "CVE-2025-1864",
+      "Description": "Improper Restriction of Operations within the Bounds of a Memory Buffer vulnerability in radareorg radare2 allows Overflow Buffers.This issue affects radare2: before \u003c5.9.9.",
+      "Threats": [
+        {
+          "Type": "Impact",
+          "Severity": "moderate"
+        }
+      ],
+      "References": [
+        {
+          "URL": "https://www.suse.com/security/cve/CVE-2025-1864.html",
+          "Description": "CVE-2025-1864"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1238451",
+          "Description": "SUSE Bug 1238451"
+        }
+      ],
+      "ProductStatuses": [
+        {
+          "Type": "Fixed",
+          "ProductID": [
+            "openSUSE Tumbleweed:radare2-5.9.8-3.1",
+            "openSUSE Tumbleweed:radare2-devel-5.9.8-3.1",
+            "openSUSE Tumbleweed:radare2-zsh-completion-5.9.8-3.1"
+          ]
+        }
+      ],
+      "CVSSScoreSets": {}
+    },
+    {
+      "CVE": "CVE-2025-5641",
+      "Description": "A vulnerability was found in Radare2 5.9.9. It has been rated as problematic. This issue affects the function r_cons_is_breaked in the library /libr/cons/cons.c of the component radiff2. The manipulation of the argument -T leads to memory corruption. It is possible to launch the attack on the local host. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. The identifier of the patch is 5705d99cc1f23f36f9a84aab26d1724010b97798. It is recommended to apply a patch to fix this issue. The documentation explains that the parameter -T is experimental and \"crashy\". Further analysis has shown \"the race is not a real problem unless you use asan\". An additional warning regarding threading support has been added.",
+      "Threats": [
+        {
+          "Type": "Impact",
+          "Severity": "moderate"
+        }
+      ],
+      "References": [
+        {
+          "URL": "https://www.suse.com/security/cve/CVE-2025-5641.html",
+          "Description": "CVE-2025-5641"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1244121",
+          "Description": "SUSE Bug 1244121"
+        }
+      ],
+      "ProductStatuses": [
+        {
+          "Type": "Fixed",
+          "ProductID": [
+            "openSUSE Tumbleweed:radare2-5.9.8-3.1",
+            "openSUSE Tumbleweed:radare2-devel-5.9.8-3.1",
+            "openSUSE Tumbleweed:radare2-zsh-completion-5.9.8-3.1"
+          ]
+        }
+      ],
+      "CVSSScoreSets": {}
+    }
+  ]
+}

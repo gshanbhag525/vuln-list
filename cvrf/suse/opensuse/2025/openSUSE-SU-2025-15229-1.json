@@ -1,0 +1,119 @@
+{
+  "Title": "himmelblau-0.9.17+git.0.4a97692-1.1 on GA media",
+  "Tracking": {
+    "ID": "openSUSE-SU-2025:15229-1",
+    "Status": "Final",
+    "Version": "1",
+    "InitialReleaseDate": "2025-07-03T00:00:00Z",
+    "CurrentReleaseDate": "2025-07-03T00:00:00Z",
+    "RevisionHistory": [
+      {
+        "Number": "1",
+        "Date": "2025-07-03T00:00:00Z",
+        "Description": "current"
+      }
+    ]
+  },
+  "Notes": [
+    {
+      "Text": "himmelblau-0.9.17+git.0.4a97692-1.1 on GA media",
+      "Title": "Topic",
+      "Type": "Summary"
+    },
+    {
+      "Text": "These are all security issues fixed in the himmelblau-0.9.17+git.0.4a97692-1.1 package on the GA media of openSUSE Tumbleweed.",
+      "Title": "Details",
+      "Type": "General"
+    },
+    {
+      "Text": "The CVRF data is provided by SUSE under the Creative Commons License 4.0 with Attribution (CC-BY-4.0).",
+      "Title": "Terms of Use",
+      "Type": "Legal Disclaimer"
+    },
+    {
+      "Text": "openSUSE-Tumbleweed-2025-15229",
+      "Title": "Patchnames",
+      "Type": "Details"
+    }
+  ],
+  "ProductTree": {
+    "Relationships": [
+      {
+        "ProductReference": "himmelblau-0.9.17+git.0.4a97692-1.1",
+        "RelatesToProductReference": "openSUSE Tumbleweed",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "himmelblau-qr-greeter-0.9.17+git.0.4a97692-1.1",
+        "RelatesToProductReference": "openSUSE Tumbleweed",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "himmelblau-sshd-config-0.9.17+git.0.4a97692-1.1",
+        "RelatesToProductReference": "openSUSE Tumbleweed",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "himmelblau-sso-0.9.17+git.0.4a97692-1.1",
+        "RelatesToProductReference": "openSUSE Tumbleweed",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libnss_himmelblau2-0.9.17+git.0.4a97692-1.1",
+        "RelatesToProductReference": "openSUSE Tumbleweed",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "pam-himmelblau-0.9.17+git.0.4a97692-1.1",
+        "RelatesToProductReference": "openSUSE Tumbleweed",
+        "RelationType": "Default Component Of"
+      }
+    ]
+  },
+  "References": [
+    {
+      "URL": "https://www.suse.com/support/security/rating/",
+      "Description": "SUSE Security Ratings"
+    },
+    {
+      "URL": "https://www.suse.com/security/cve/CVE-2025-53013/",
+      "Description": "SUSE CVE CVE-2025-53013 page"
+    }
+  ],
+  "Vulnerabilities": [
+    {
+      "CVE": "CVE-2025-53013",
+      "Description": "Himmelblau is an interoperability suite for Microsoft Azure Entra ID and Intune. A vulnerability present in versions 0.9.10 through 0.9.16 allows a user to authenticate to a Linux host via Himmelblau using an *invalid* Linux Hello PIN, provided the host is offline. While the user gains access to the local system, Single Sign-On (SSO) fails due to the network being down and the inability to issue tokens (due to a failure to unlock the Hello key). The core issue lies in an incorrect assumption within the `acquire_token_by_hello_for_business_key` function: it was expected to return a `TPMFail` error for an invalid Hello key when offline, but instead, a preceding nonce request resulted in a `RequestFailed` error, leading the system to erroneously transition to an offline success state without validating the Hello key unlock. This impacts systems using Himmelblau for authentication when operating in an offline state with Hello PIN authentication enabled. Rocky Linux 8 (and variants) are not affected by this vulnerability. The problem is resolved in Himmelblau version 0.9.17. A workaround is available for users who cannot immediately upgrade. Disabling Hello PIN authentication by setting `enable_hello = false` in `/etc/himmelblau/himmelblau.conf` will mitigate the vulnerability.",
+      "Threats": [
+        {
+          "Type": "Impact",
+          "Severity": "moderate"
+        }
+      ],
+      "References": [
+        {
+          "URL": "https://www.suse.com/security/cve/CVE-2025-53013.html",
+          "Description": "CVE-2025-53013"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1245437",
+          "Description": "SUSE Bug 1245437"
+        }
+      ],
+      "ProductStatuses": [
+        {
+          "Type": "Fixed",
+          "ProductID": [
+            "openSUSE Tumbleweed:himmelblau-0.9.17+git.0.4a97692-1.1",
+            "openSUSE Tumbleweed:himmelblau-qr-greeter-0.9.17+git.0.4a97692-1.1",
+            "openSUSE Tumbleweed:himmelblau-sshd-config-0.9.17+git.0.4a97692-1.1",
+            "openSUSE Tumbleweed:himmelblau-sso-0.9.17+git.0.4a97692-1.1",
+            "openSUSE Tumbleweed:libnss_himmelblau2-0.9.17+git.0.4a97692-1.1",
+            "openSUSE Tumbleweed:pam-himmelblau-0.9.17+git.0.4a97692-1.1"
+          ]
+        }
+      ],
+      "CVSSScoreSets": {}
+    }
+  ]
+}

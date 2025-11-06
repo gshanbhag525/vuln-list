@@ -9,7 +9,7 @@
     "RevisionHistory": [
       {
         "Number": "1",
-        "Date": "2025-06-16T11:47:57Z",
+        "Date": "2025-11-05T14:12:20Z",
         "Description": "current"
       }
     ]
@@ -922,7 +922,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "important"
+          "Severity": "moderate"
         }
       ],
       "References": null,
@@ -1992,7 +1992,7 @@
     },
     {
       "CVE": "CVE-2021-47209",
-      "Description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsched/fair: Prevent dead task groups from regaining cfs_rq's\n\nKevin is reporting crashes which point to a use-after-free of a cfs_rq\nin update_blocked_averages(). Initial debugging revealed that we've\nlive cfs_rq's (on_list=1) in an about to be kfree()'d task group in\nfree_fair_sched_group(). However, it was unclear how that can happen.\n\nHis kernel config happened to lead to a layout of struct sched_entity\nthat put the 'my_q' member directly into the middle of the object\nwhich makes it incidentally overlap with SLUB's freelist pointer.\nThat, in combination with SLAB_FREELIST_HARDENED's freelist pointer\nmangling, leads to a reliable access violation in form of a #GP which\nmade the UAF fail fast.\n\nMichal seems to have run into the same issue[1]. He already correctly\ndiagnosed that commit a7b359fc6a37 (\"sched/fair: Correctly insert\ncfs_rq's to list on unthrottle\") is causing the preconditions for the\nUAF to happen by re-adding cfs_rq's also to task groups that have no\nmore running tasks, i.e. also to dead ones. His analysis, however,\nmisses the real root cause and it cannot be seen from the crash\nbacktrace only, as the real offender is tg_unthrottle_up() getting\ncalled via sched_cfs_period_timer() via the timer interrupt at an\ninconvenient time.\n\nWhen unregister_fair_sched_group() unlinks all cfs_rq's from the dying\ntask group, it doesn't protect itself from getting interrupted. If the\ntimer interrupt triggers while we iterate over all CPUs or after\nunregister_fair_sched_group() has finished but prior to unlinking the\ntask group, sched_cfs_period_timer() will execute and walk the list of\ntask groups, trying to unthrottle cfs_rq's, i.e. re-add them to the\ndying task group. These will later -- in free_fair_sched_group() -- be\nkfree()'ed while still being linked, leading to the fireworks Kevin\nand Michal are seeing.\n\nTo fix this race, ensure the dying task group gets unlinked first.\nHowever, simply switching the order of unregistering and unlinking the\ntask group isn't sufficient, as concurrent RCU walkers might still see\nit, as can be seen below:\n\n    CPU1:                                      CPU2:\n      :                                        timer IRQ:\n      :                                          do_sched_cfs_period_timer():\n      :                                            :\n      :                                            distribute_cfs_runtime():\n      :                                              rcu_read_lock();\n      :                                              :\n      :                                              unthrottle_cfs_rq():\n    sched_offline_group():                             :\n      :                                                walk_tg_tree_from(…,tg_unthrottle_up,…):\n      list_del_rcu(\u0026tg-\u003elist);                           :\n (1)  :                                                  list_for_each_entry_rcu(child, \u0026parent-\u003echildren, siblings)\n      :                                                    :\n (2)  list_del_rcu(\u0026tg-\u003esiblings);                         :\n      :                                                    tg_unthrottle_up():\n      unregister_fair_sched_group():                         struct cfs_rq *cfs_rq = tg-\u003ecfs_rq[cpu_of(rq)];\n        :                                                    :\n        list_del_leaf_cfs_rq(tg-\u003ecfs_rq[cpu]);               :\n        :                                                    :\n        :                                                    if (!cfs_rq_is_decayed(cfs_rq) || cfs_rq-\u003enr_running)\n (3)    :                                                        list_add_leaf_cfs_rq(cfs_rq);\n      :                                                      :\n      :                                                    :\n      :                                                  :\n      :                                                :\n      :                           \n---truncated---",
+      "Description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsched/fair: Prevent dead task groups from regaining cfs_rq's\n\nKevin is reporting crashes which point to a use-after-free of a cfs_rq\nin update_blocked_averages(). Initial debugging revealed that we've\nlive cfs_rq's (on_list=1) in an about to be kfree()'d task group in\nfree_fair_sched_group(). However, it was unclear how that can happen.\n\nHis kernel config happened to lead to a layout of struct sched_entity\nthat put the 'my_q' member directly into the middle of the object\nwhich makes it incidentally overlap with SLUB's freelist pointer.\nThat, in combination with SLAB_FREELIST_HARDENED's freelist pointer\nmangling, leads to a reliable access violation in form of a #GP which\nmade the UAF fail fast.\n\nMichal seems to have run into the same issue[1]. He already correctly\ndiagnosed that commit a7b359fc6a37 (\"sched/fair: Correctly insert\ncfs_rq's to list on unthrottle\") is causing the preconditions for the\nUAF to happen by re-adding cfs_rq's also to task groups that have no\nmore running tasks, i.e. also to dead ones. His analysis, however,\nmisses the real root cause and it cannot be seen from the crash\nbacktrace only, as the real offender is tg_unthrottle_up() getting\ncalled via sched_cfs_period_timer() via the timer interrupt at an\ninconvenient time.\n\nWhen unregister_fair_sched_group() unlinks all cfs_rq's from the dying\ntask group, it doesn't protect itself from getting interrupted. If the\ntimer interrupt triggers while we iterate over all CPUs or after\nunregister_fair_sched_group() has finished but prior to unlinking the\ntask group, sched_cfs_period_timer() will execute and walk the list of\ntask groups, trying to unthrottle cfs_rq's, i.e. re-add them to the\ndying task group. These will later -- in free_fair_sched_group() -- be\nkfree()'ed while still being linked, leading to the fireworks Kevin\nand Michal are seeing.\n\nTo fix this race, ensure the dying task group gets unlinked first.\nHowever, simply switching the order of unregistering and unlinking the\ntask group isn't sufficient, as concurrent RCU walkers might still see\nit, as can be seen below:\n\n    CPU1:                                      CPU2:\n      :                                        timer IRQ:\n      :                                          do_sched_cfs_period_timer():\n      :                                            :\n      :                                            distribute_cfs_runtime():\n      :                                              rcu_read_lock();\n      :                                              :\n      :                                              unthrottle_cfs_rq():\n    sched_offline_group():                             :\n      :                                                walk_tg_tree_from(...,tg_unthrottle_up,...):\n      list_del_rcu(\u0026tg-\u003elist);                           :\n (1)  :                                                  list_for_each_entry_rcu(child, \u0026parent-\u003echildren, siblings)\n      :                                                    :\n (2)  list_del_rcu(\u0026tg-\u003esiblings);                         :\n      :                                                    tg_unthrottle_up():\n      unregister_fair_sched_group():                         struct cfs_rq *cfs_rq = tg-\u003ecfs_rq[cpu_of(rq)];\n        :                                                    :\n        list_del_leaf_cfs_rq(tg-\u003ecfs_rq[cpu]);               :\n        :                                                    :\n        :                                                    if (!cfs_rq_is_decayed(cfs_rq) || cfs_rq-\u003enr_running)\n (3)    :                                                        list_add_leaf_cfs_rq(cfs_rq);\n      :                                                      :\n      :                                                    :\n      :                                                  :\n      :                                                :\n      :                           \n---truncated---",
       "Threats": [
         {
           "Type": "Impact",
@@ -2116,7 +2116,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "low"
+          "Severity": "moderate"
         }
       ],
       "References": null,
@@ -2196,7 +2196,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "moderate"
+          "Severity": "important"
         }
       ],
       "References": null,
@@ -2219,7 +2219,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "moderate"
+          "Severity": "important"
         }
       ],
       "References": null,
@@ -3158,7 +3158,7 @@
     },
     {
       "CVE": "CVE-2022-48700",
-      "Description": "** REJECT ** This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+      "Description": "This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
       "Threats": [
         {
           "Type": "Impact",
@@ -3339,11 +3339,11 @@
     },
     {
       "CVE": "CVE-2023-38288",
-      "Description": "** REJECT ** Not a Security Issue.",
+      "Description": "Not a Security Issue.",
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "low"
+          "Severity": "moderate"
         }
       ],
       "References": null,
@@ -3421,7 +3421,7 @@
     },
     {
       "CVE": "CVE-2023-45918",
-      "Description": "** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none.",
+      "Description": "DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none.",
       "Threats": [
         {
           "Type": "Impact",
@@ -3446,7 +3446,7 @@
     },
     {
       "CVE": "CVE-2023-46841",
-      "Description": "Recent x86 CPUs offer functionality named Control-flow Enforcement\nTechnology (CET).  A sub-feature of this are Shadow Stacks (CET-SS).\nCET-SS is a hardware feature designed to protect against Return Oriented\nProgramming attacks. When enabled, traditional stacks holding both data\nand return addresses are accompanied by so called \"shadow stacks\",\nholding little more than return addresses.  Shadow stacks aren't\nwritable by normal instructions, and upon function returns their\ncontents are used to check for possible manipulation of a return address\ncoming from the traditional stack.\n\nIn particular certain memory accesses need intercepting by Xen.  In\nvarious cases the necessary emulation involves kind of replaying of\nthe instruction.  Such replaying typically involves filling and then\ninvoking of a stub.  Such a replayed instruction may raise an\nexceptions, which is expected and dealt with accordingly.\n\nUnfortunately the interaction of both of the above wasn't right:\nRecovery involves removal of a call frame from the (traditional) stack.\nThe counterpart of this operation for the shadow stack was missing.\n",
+      "Description": "Recent x86 CPUs offer functionality named Control-flow Enforcement\nTechnology (CET).  A sub-feature of this are Shadow Stacks (CET-SS).\nCET-SS is a hardware feature designed to protect against Return Oriented\nProgramming attacks. When enabled, traditional stacks holding both data\nand return addresses are accompanied by so called \"shadow stacks\",\nholding little more than return addresses.  Shadow stacks aren't\nwritable by normal instructions, and upon function returns their\ncontents are used to check for possible manipulation of a return address\ncoming from the traditional stack.\n\nIn particular certain memory accesses need intercepting by Xen.  In\nvarious cases the necessary emulation involves kind of replaying of\nthe instruction.  Such replaying typically involves filling and then\ninvoking of a stub.  Such a replayed instruction may raise an\nexceptions, which is expected and dealt with accordingly.\n\nUnfortunately the interaction of both of the above wasn't right:\nRecovery involves removal of a call frame from the (traditional) stack.\nThe counterpart of this operation for the shadow stack was missing.",
       "Threats": [
         {
           "Type": "Impact",
@@ -3675,7 +3675,7 @@
     },
     {
       "CVE": "CVE-2023-4881",
-      "Description": "** REJECT ** CVE-2023-4881 was wrongly assigned to a bug that was deemed to be a non-security issue by the Linux kernel security team.",
+      "Description": "CVE-2023-4881 was wrongly assigned to a bug that was deemed to be a non-security issue by the Linux kernel security team.",
       "Threats": [
         {
           "Type": "Impact",
@@ -4637,7 +4637,7 @@
     },
     {
       "CVE": "CVE-2023-52575",
-      "Description": "** REJECT ** This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+      "Description": "This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
       "Threats": [
         {
           "Type": "Impact",
@@ -5017,7 +5017,7 @@
     },
     {
       "CVE": "CVE-2023-52605",
-      "Description": "** REJECT ** This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+      "Description": "This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
       "Threats": [
         {
           "Type": "Impact",
@@ -5101,7 +5101,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "important"
+          "Severity": "moderate"
         }
       ],
       "References": null,
@@ -5401,7 +5401,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "low"
+          "Severity": "moderate"
         }
       ],
       "References": null,
@@ -5621,7 +5621,7 @@
     },
     {
       "CVE": "CVE-2024-22099",
-      "Description": "NULL Pointer Dereference vulnerability in Linux Linux kernel kernel on Linux, x86, ARM (net, bluetooth modules) allows Overflow Buffers. This vulnerability is associated with program files /net/bluetooth/rfcomm/core.C.\n\nThis issue affects Linux kernel: v2.6.12-rc2.\n\n",
+      "Description": "NULL Pointer Dereference vulnerability in Linux Linux kernel kernel on Linux, x86, ARM (net, bluetooth modules) allows Overflow Buffers. This vulnerability is associated with program files /net/bluetooth/rfcomm/core.C.\n\nThis issue affects Linux kernel: v2.6.12-rc2.",
       "Threats": [
         {
           "Type": "Impact",
@@ -5831,7 +5831,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "important"
+          "Severity": "moderate"
         }
       ],
       "References": null,
@@ -5853,7 +5853,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "important"
+          "Severity": "moderate"
         }
       ],
       "References": null,
@@ -5875,7 +5875,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "important"
+          "Severity": "moderate"
         }
       ],
       "References": null,
@@ -7333,7 +7333,7 @@
     },
     {
       "CVE": "CVE-2024-26848",
-      "Description": "** REJECT ** This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+      "Description": "This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
       "Threats": [
         {
           "Type": "Impact",
@@ -7797,7 +7797,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "low"
+          "Severity": "moderate"
         }
       ],
       "References": null,
@@ -8053,7 +8053,7 @@
     },
     {
       "CVE": "CVE-2024-26972",
-      "Description": "** REJECT ** This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+      "Description": "This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
       "Threats": [
         {
           "Type": "Impact",
@@ -8357,7 +8357,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "important"
+          "Severity": "moderate"
         }
       ],
       "References": null,
@@ -8532,7 +8532,7 @@
     },
     {
       "CVE": "CVE-2024-2961",
-      "Description": "The iconv() function in the GNU C Library versions 2.39 and older may overflow the output buffer passed to it by up to 4 bytes when converting strings to the ISO-2022-CN-EXT character set, which may be used to crash an application or overwrite a neighbouring variable.\n",
+      "Description": "The iconv() function in the GNU C Library versions 2.39 and older may overflow the output buffer passed to it by up to 4 bytes when converting strings to the ISO-2022-CN-EXT character set, which may be used to crash an application or overwrite a neighbouring variable.",
       "Threats": [
         {
           "Type": "Impact",

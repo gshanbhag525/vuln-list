@@ -5266,7 +5266,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "moderate"
+          "Severity": "low"
         }
       ],
       "References": [
@@ -7010,7 +7010,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "moderate"
+          "Severity": "important"
         }
       ],
       "References": [
@@ -9786,6 +9786,10 @@
           "Description": "CVE-2013-4299"
         },
         {
+          "URL": "https://bugzilla.suse.com/823260",
+          "Description": "SUSE Bug 823260"
+        },
+        {
           "URL": "https://bugzilla.suse.com/846404",
           "Description": "SUSE Bug 846404"
         }
@@ -10662,6 +10666,10 @@
         {
           "URL": "https://bugzilla.suse.com/849034",
           "Description": "SUSE Bug 849034"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/850263",
+          "Description": "SUSE Bug 850263"
         }
       ],
       "ProductStatuses": [
@@ -11969,6 +11977,10 @@
           "Description": "CVE-2013-6382"
         },
         {
+          "URL": "https://bugzilla.suse.com/823260",
+          "Description": "SUSE Bug 823260"
+        },
+        {
           "URL": "https://bugzilla.suse.com/852553",
           "Description": "SUSE Bug 852553"
         }
@@ -12246,7 +12258,7 @@
     },
     {
       "CVE": "CVE-2013-6463",
-      "Description": "** REJECT **  DO NOT USE THIS CANDIDATE NUMBER.  ConsultIDs: CVE-2013-7266, CVE-2013-7267, CVE-2013-7268, CVE-2013-7269, CVE-2013-7270, CVE-2013-7271.  Reason: This candidate is a duplicate of CVE-2013-7266, CVE-2013-7267, CVE-2013-7268, CVE-2013-7269, CVE-2013-7270, and CVE-2013-7271.  Notes: All CVE users should reference CVE-2013-7266, CVE-2013-7267, CVE-2013-7268, CVE-2013-7269, CVE-2013-7270, and/or CVE-2013-7271 instead of this candidate.  All references and descriptions in this candidate have been removed to prevent accidental usage.",
+      "Description": "DO NOT USE THIS CANDIDATE NUMBER.  ConsultIDs: CVE-2013-7266, CVE-2013-7267, CVE-2013-7268, CVE-2013-7269, CVE-2013-7270, CVE-2013-7271.  Reason: This candidate is a duplicate of CVE-2013-7266, CVE-2013-7267, CVE-2013-7268, CVE-2013-7269, CVE-2013-7270, and CVE-2013-7271.  Notes: All CVE users should reference CVE-2013-7266, CVE-2013-7267, CVE-2013-7268, CVE-2013-7269, CVE-2013-7270, and/or CVE-2013-7271 instead of this candidate.  All references and descriptions in this candidate have been removed to prevent accidental usage",
       "Threats": [
         {
           "Type": "Impact",
@@ -13141,7 +13153,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "moderate"
+          "Severity": "low"
         }
       ],
       "References": [
@@ -13431,7 +13443,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "important"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -13738,6 +13750,10 @@
           "Description": "SUSE Bug 1115893"
         },
         {
+          "URL": "https://bugzilla.suse.com/823260",
+          "Description": "SUSE Bug 823260"
+        },
+        {
           "URL": "https://bugzilla.suse.com/866102",
           "Description": "SUSE Bug 866102"
         }
@@ -14027,7 +14043,7 @@
     },
     {
       "CVE": "CVE-2014-0155",
-      "Description": "The ioapic_deliver function in virt/kvm/ioapic.c in the Linux kernel through 3.14.1 does not properly validate the kvm_irq_delivery_to_apic return value, which allows guest OS users to cause a denial of service (host OS crash) via a crafted entry in the redirection table of an I/O APIC. NOTE: the affected code was moved to the ioapic_service function before the vulnerability was announced.",
+      "Description": "The ioapic_deliver function in virt/kvm/ioapic.c in the Linux kernel through 3.14.1 does not properly validate the kvm_irq_delivery_to_apic return value, which allows guest OS users to cause a denial of service (host OS crash) via a crafted entry in the redirection table of an I/O APIC.  NOTE: the affected code was moved to the ioapic_service function before the vulnerability was announced.",
       "Threats": [
         {
           "Type": "Impact",
@@ -14495,6 +14511,10 @@
           "Description": "CVE-2014-1444"
         },
         {
+          "URL": "https://bugzilla.suse.com/823260",
+          "Description": "SUSE Bug 823260"
+        },
+        {
           "URL": "https://bugzilla.suse.com/858869",
           "Description": "SUSE Bug 858869"
         }
@@ -14638,6 +14658,10 @@
         {
           "URL": "https://www.suse.com/security/cve/CVE-2014-1445.html",
           "Description": "CVE-2014-1445"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/823260",
+          "Description": "SUSE Bug 823260"
         },
         {
           "URL": "https://bugzilla.suse.com/858870",
@@ -14785,6 +14809,10 @@
           "Description": "CVE-2014-1446"
         },
         {
+          "URL": "https://bugzilla.suse.com/823260",
+          "Description": "SUSE Bug 823260"
+        },
+        {
           "URL": "https://bugzilla.suse.com/858872",
           "Description": "SUSE Bug 858872"
         }
@@ -14921,7 +14949,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "important"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -15074,7 +15102,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "important"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -15377,6 +15405,10 @@
           "Description": "CVE-2014-1874"
         },
         {
+          "URL": "https://bugzilla.suse.com/823260",
+          "Description": "SUSE Bug 823260"
+        },
+        {
           "URL": "https://bugzilla.suse.com/863335",
           "Description": "SUSE Bug 863335"
         }
@@ -15513,7 +15545,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "important"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -15662,7 +15694,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "critical"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -15956,7 +15988,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "important"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -16105,7 +16137,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "important"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -16399,7 +16431,7 @@
     },
     {
       "CVE": "CVE-2014-3144",
-      "Description": "The (1) BPF_S_ANC_NLATTR and (2) BPF_S_ANC_NLATTR_NEST extension implementations in the sk_run_filter function in net/core/filter.c in the Linux kernel through 3.14.3 do not check whether a certain length value is sufficiently large, which allows local users to cause a denial of service (integer underflow and system crash) via crafted BPF instructions. NOTE: the affected code was moved to the __skb_get_nlattr and __skb_get_nlattr_nest functions before the vulnerability was announced.",
+      "Description": "The (1) BPF_S_ANC_NLATTR and (2) BPF_S_ANC_NLATTR_NEST extension implementations in the sk_run_filter function in net/core/filter.c in the Linux kernel through 3.14.3 do not check whether a certain length value is sufficiently large, which allows local users to cause a denial of service (integer underflow and system crash) via crafted BPF instructions.  NOTE: the affected code was moved to the __skb_get_nlattr and __skb_get_nlattr_nest functions before the vulnerability was announced.",
       "Threats": [
         {
           "Type": "Impact",
@@ -16552,11 +16584,11 @@
     },
     {
       "CVE": "CVE-2014-3145",
-      "Description": "The BPF_S_ANC_NLATTR_NEST extension implementation in the sk_run_filter function in net/core/filter.c in the Linux kernel through 3.14.3 uses the reverse order in a certain subtraction, which allows local users to cause a denial of service (over-read and system crash) via crafted BPF instructions. NOTE: the affected code was moved to the __skb_get_nlattr_nest function before the vulnerability was announced.",
+      "Description": "The BPF_S_ANC_NLATTR_NEST extension implementation in the sk_run_filter function in net/core/filter.c in the Linux kernel through 3.14.3 uses the reverse order in a certain subtraction, which allows local users to cause a denial of service (over-read and system crash) via crafted BPF instructions.  NOTE: the affected code was moved to the __skb_get_nlattr_nest function before the vulnerability was announced.",
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "important"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -19069,7 +19101,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "important"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -19210,11 +19242,11 @@
     },
     {
       "CVE": "CVE-2014-4608",
-      "Description": "** DISPUTED ** Multiple integer overflows in the lzo1x_decompress_safe function in lib/lzo/lzo1x_decompress_safe.c in the LZO decompressor in the Linux kernel before 3.15.2 allow context-dependent attackers to cause a denial of service (memory corruption) via a crafted Literal Run.  NOTE: the author of the LZO algorithms says \"the Linux kernel is *not* affected; media hype.\"",
+      "Description": "Multiple integer overflows in the lzo1x_decompress_safe function in lib/lzo/lzo1x_decompress_safe.c in the LZO decompressor in the Linux kernel before 3.15.2 allow context-dependent attackers to cause a denial of service (memory corruption) via a crafted Literal Run.  NOTE: the author of the LZO algorithms says \"the Linux kernel is *not* affected; media hype.",
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "moderate"
+          "Severity": "important"
         }
       ],
       "References": [
@@ -20523,7 +20555,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "important"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -23821,7 +23853,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "important"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -25613,7 +25645,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "moderate"
+          "Severity": "critical"
         }
       ],
       "References": [

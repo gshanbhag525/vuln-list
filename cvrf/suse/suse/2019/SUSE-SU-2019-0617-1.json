@@ -449,7 +449,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "low"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -522,7 +522,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "low"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -533,6 +533,10 @@
         {
           "URL": "https://bugzilla.suse.com/1122292",
           "Description": "SUSE Bug 1122292"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1132734",
+          "Description": "SUSE Bug 1132734"
         }
       ],
       "ProductStatuses": [

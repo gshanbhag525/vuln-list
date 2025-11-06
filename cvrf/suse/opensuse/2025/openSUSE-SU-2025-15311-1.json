@@ -1,0 +1,265 @@
+{
+  "Title": "xwayland-24.1.8-1.1 on GA media",
+  "Tracking": {
+    "ID": "openSUSE-SU-2025:15311-1",
+    "Status": "Final",
+    "Version": "1",
+    "InitialReleaseDate": "2025-07-03T00:00:00Z",
+    "CurrentReleaseDate": "2025-07-03T00:00:00Z",
+    "RevisionHistory": [
+      {
+        "Number": "1",
+        "Date": "2025-07-03T00:00:00Z",
+        "Description": "current"
+      }
+    ]
+  },
+  "Notes": [
+    {
+      "Text": "xwayland-24.1.8-1.1 on GA media",
+      "Title": "Topic",
+      "Type": "Summary"
+    },
+    {
+      "Text": "These are all security issues fixed in the xwayland-24.1.8-1.1 package on the GA media of openSUSE Tumbleweed.",
+      "Title": "Details",
+      "Type": "General"
+    },
+    {
+      "Text": "The CVRF data is provided by SUSE under the Creative Commons License 4.0 with Attribution (CC-BY-4.0).",
+      "Title": "Terms of Use",
+      "Type": "Legal Disclaimer"
+    },
+    {
+      "Text": "openSUSE-Tumbleweed-2025-15311",
+      "Title": "Patchnames",
+      "Type": "Details"
+    }
+  ],
+  "ProductTree": {
+    "Relationships": [
+      {
+        "ProductReference": "xwayland-24.1.8-1.1",
+        "RelatesToProductReference": "openSUSE Tumbleweed",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "xwayland-devel-24.1.8-1.1",
+        "RelatesToProductReference": "openSUSE Tumbleweed",
+        "RelationType": "Default Component Of"
+      }
+    ]
+  },
+  "References": [
+    {
+      "URL": "https://www.suse.com/support/security/rating/",
+      "Description": "SUSE Security Ratings"
+    },
+    {
+      "URL": "https://www.suse.com/security/cve/CVE-2025-49175/",
+      "Description": "SUSE CVE CVE-2025-49175 page"
+    },
+    {
+      "URL": "https://www.suse.com/security/cve/CVE-2025-49176/",
+      "Description": "SUSE CVE CVE-2025-49176 page"
+    },
+    {
+      "URL": "https://www.suse.com/security/cve/CVE-2025-49177/",
+      "Description": "SUSE CVE CVE-2025-49177 page"
+    },
+    {
+      "URL": "https://www.suse.com/security/cve/CVE-2025-49178/",
+      "Description": "SUSE CVE CVE-2025-49178 page"
+    },
+    {
+      "URL": "https://www.suse.com/security/cve/CVE-2025-49179/",
+      "Description": "SUSE CVE CVE-2025-49179 page"
+    },
+    {
+      "URL": "https://www.suse.com/security/cve/CVE-2025-49180/",
+      "Description": "SUSE CVE CVE-2025-49180 page"
+    }
+  ],
+  "Vulnerabilities": [
+    {
+      "CVE": "CVE-2025-49175",
+      "Description": "A flaw was found in the X Rendering extension's handling of animated cursors. If a client provides no cursors, the server assumes at least one is present, leading to an out-of-bounds read and potential crash.",
+      "Threats": [
+        {
+          "Type": "Impact",
+          "Severity": "important"
+        }
+      ],
+      "References": [
+        {
+          "URL": "https://www.suse.com/security/cve/CVE-2025-49175.html",
+          "Description": "CVE-2025-49175"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1244082",
+          "Description": "SUSE Bug 1244082"
+        }
+      ],
+      "ProductStatuses": [
+        {
+          "Type": "Fixed",
+          "ProductID": [
+            "openSUSE Tumbleweed:xwayland-24.1.8-1.1",
+            "openSUSE Tumbleweed:xwayland-devel-24.1.8-1.1"
+          ]
+        }
+      ],
+      "CVSSScoreSets": {}
+    },
+    {
+      "CVE": "CVE-2025-49176",
+      "Description": "A flaw was found in the Big Requests extension. The request length is multiplied by 4 before checking against the maximum allowed size, potentially causing an integer overflow and bypassing the size check.",
+      "Threats": [
+        {
+          "Type": "Impact",
+          "Severity": "important"
+        }
+      ],
+      "References": [
+        {
+          "URL": "https://www.suse.com/security/cve/CVE-2025-49176.html",
+          "Description": "CVE-2025-49176"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1244084",
+          "Description": "SUSE Bug 1244084"
+        }
+      ],
+      "ProductStatuses": [
+        {
+          "Type": "Fixed",
+          "ProductID": [
+            "openSUSE Tumbleweed:xwayland-24.1.8-1.1",
+            "openSUSE Tumbleweed:xwayland-devel-24.1.8-1.1"
+          ]
+        }
+      ],
+      "CVSSScoreSets": {}
+    },
+    {
+      "CVE": "CVE-2025-49177",
+      "Description": "A flaw was found in the XFIXES extension. The XFixesSetClientDisconnectMode handler does not validate the request length, allowing a client to read unintended memory from previous requests.",
+      "Threats": [
+        {
+          "Type": "Impact",
+          "Severity": "moderate"
+        }
+      ],
+      "References": [
+        {
+          "URL": "https://www.suse.com/security/cve/CVE-2025-49177.html",
+          "Description": "CVE-2025-49177"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1244085",
+          "Description": "SUSE Bug 1244085"
+        }
+      ],
+      "ProductStatuses": [
+        {
+          "Type": "Fixed",
+          "ProductID": [
+            "openSUSE Tumbleweed:xwayland-24.1.8-1.1",
+            "openSUSE Tumbleweed:xwayland-devel-24.1.8-1.1"
+          ]
+        }
+      ],
+      "CVSSScoreSets": {}
+    },
+    {
+      "CVE": "CVE-2025-49178",
+      "Description": "A flaw was found in the X server's request handling. Non-zero 'bytes to ignore' in a client's request can cause the server to skip processing another client's request, potentially leading to a denial of service.",
+      "Threats": [
+        {
+          "Type": "Impact",
+          "Severity": "moderate"
+        }
+      ],
+      "References": [
+        {
+          "URL": "https://www.suse.com/security/cve/CVE-2025-49178.html",
+          "Description": "CVE-2025-49178"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1244087",
+          "Description": "SUSE Bug 1244087"
+        }
+      ],
+      "ProductStatuses": [
+        {
+          "Type": "Fixed",
+          "ProductID": [
+            "openSUSE Tumbleweed:xwayland-24.1.8-1.1",
+            "openSUSE Tumbleweed:xwayland-devel-24.1.8-1.1"
+          ]
+        }
+      ],
+      "CVSSScoreSets": {}
+    },
+    {
+      "CVE": "CVE-2025-49179",
+      "Description": "A flaw was found in the X Record extension. The RecordSanityCheckRegisterClients function does not check for an integer overflow when computing request length, which allows a client to bypass length checks.",
+      "Threats": [
+        {
+          "Type": "Impact",
+          "Severity": "important"
+        }
+      ],
+      "References": [
+        {
+          "URL": "https://www.suse.com/security/cve/CVE-2025-49179.html",
+          "Description": "CVE-2025-49179"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1244089",
+          "Description": "SUSE Bug 1244089"
+        }
+      ],
+      "ProductStatuses": [
+        {
+          "Type": "Fixed",
+          "ProductID": [
+            "openSUSE Tumbleweed:xwayland-24.1.8-1.1",
+            "openSUSE Tumbleweed:xwayland-devel-24.1.8-1.1"
+          ]
+        }
+      ],
+      "CVSSScoreSets": {}
+    },
+    {
+      "CVE": "CVE-2025-49180",
+      "Description": "A flaw was found in the RandR extension, where the RRChangeProviderProperty function does not properly validate input. This issue leads to an integer overflow when computing the total size to allocate.",
+      "Threats": [
+        {
+          "Type": "Impact",
+          "Severity": "important"
+        }
+      ],
+      "References": [
+        {
+          "URL": "https://www.suse.com/security/cve/CVE-2025-49180.html",
+          "Description": "CVE-2025-49180"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1244090",
+          "Description": "SUSE Bug 1244090"
+        }
+      ],
+      "ProductStatuses": [
+        {
+          "Type": "Fixed",
+          "ProductID": [
+            "openSUSE Tumbleweed:xwayland-24.1.8-1.1",
+            "openSUSE Tumbleweed:xwayland-devel-24.1.8-1.1"
+          ]
+        }
+      ],
+      "CVSSScoreSets": {}
+    }
+  ]
+}

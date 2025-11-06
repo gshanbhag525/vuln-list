@@ -9,7 +9,7 @@
     "RevisionHistory": [
       {
         "Number": "1",
-        "Date": "2025-06-16T11:51:12Z",
+        "Date": "2025-11-05T14:14:02Z",
         "Description": "current"
       }
     ]
@@ -1044,7 +1044,7 @@
     },
     {
       "CVE": "CVE-2024-47220",
-      "Description": "** DISPUTED ** An issue was discovered in the WEBrick toolkit through 1.8.1 for Ruby. It allows HTTP request smuggling by providing both a Content-Length header and a Transfer-Encoding header, e.g., \"GET /admin HTTP/1.1\\r\\n\" inside of a \"POST /user HTTP/1.1\\r\\n\" request. NOTE: the supplier's position is \"Webrick should not be used in production.\"",
+      "Description": "An issue was discovered in the WEBrick toolkit through 1.8.1 for Ruby. It allows HTTP request smuggling by providing both a Content-Length header and a Transfer-Encoding header, e.g., \"GET /admin HTTP/1.1\\r\\n\" inside of a \"POST /user HTTP/1.1\\r\\n\" request. NOTE: the supplier's position is \"Webrick should not be used in production.\"",
       "Threats": [
         {
           "Type": "Impact",
@@ -1166,7 +1166,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "important"
+          "Severity": "moderate"
         }
       ],
       "References": null,
@@ -1660,7 +1660,7 @@
     },
     {
       "CVE": "CVE-2025-21755",
-      "Description": "** REJECT ** This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+      "Description": "This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
       "Threats": [
         {
           "Type": "Impact",
@@ -2816,7 +2816,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "low"
+          "Severity": "moderate"
         }
       ],
       "References": null,
@@ -2864,7 +2864,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "low"
+          "Severity": "moderate"
         }
       ],
       "References": null,
@@ -3080,7 +3080,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "moderate"
+          "Severity": "important"
         }
       ],
       "References": null,
@@ -3392,7 +3392,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "moderate"
+          "Severity": "important"
         }
       ],
       "References": null,
@@ -3752,7 +3752,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "low"
+          "Severity": "moderate"
         }
       ],
       "References": null,
@@ -3796,7 +3796,7 @@
     },
     {
       "CVE": "CVE-2025-22029",
-      "Description": "** REJECT ** This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+      "Description": "This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
       "Threats": [
         {
           "Type": "Impact",
@@ -3916,7 +3916,7 @@
     },
     {
       "CVE": "CVE-2025-22050",
-      "Description": "In the Linux kernel, the following vulnerability has been resolved:\n\nusbnet:fix NPE during rx_complete\n\nMissing usbnet_going_away Check in Critical Path.\nThe usb_submit_urb function lacks a usbnet_going_away\nvalidation, whereas __usbnet_queue_skb includes this check.\n\nThis inconsistency creates a race condition where:\nA URB request may succeed, but the corresponding SKB data\nfails to be queued.\n\nSubsequent processes:\n(e.g., rx_complete → defer_bh → __skb_unlink(skb, list))\nattempt to access skb-\u003enext, triggering a NULL pointer\ndereference (Kernel Panic).",
+      "Description": "In the Linux kernel, the following vulnerability has been resolved:\n\nusbnet:fix NPE during rx_complete\n\nMissing usbnet_going_away Check in Critical Path.\nThe usb_submit_urb function lacks a usbnet_going_away\nvalidation, whereas __usbnet_queue_skb includes this check.\n\nThis inconsistency creates a race condition where:\nA URB request may succeed, but the corresponding SKB data\nfails to be queued.\n\nSubsequent processes:\n(e.g., rx_complete -\u003e defer_bh -\u003e __skb_unlink(skb, list))\nattempt to access skb-\u003enext, triggering a NULL pointer\ndereference (Kernel Panic).",
       "Threats": [
         {
           "Type": "Impact",
@@ -4953,7 +4953,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "moderate"
+          "Severity": "important"
         }
       ],
       "References": null,
@@ -5049,7 +5049,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "important"
+          "Severity": "moderate"
         }
       ],
       "References": null,
@@ -5091,7 +5091,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "critical"
+          "Severity": "important"
         }
       ],
       "References": null,

@@ -1,8 +1,8 @@
 {
-  "name": "py3-psutil",
+  "name": "libretls",
   "secfixes": {
-    "5.6.7-r0": [
-      "CVE-2019-18874"
+    "3.5.1-r0": [
+      "CVE-2022-0778"
     ]
   },
   "apkurl": "{{urlprefix}}/{{distroversion}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk",

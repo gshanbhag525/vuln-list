@@ -1,14 +1,8 @@
 {
-  "name": "py3-werkzeug",
+  "name": "rav1e",
   "secfixes": {
-    "2.2.2-r0": [
-      "CVE-2022-29361"
-    ],
-    "2.3.7-r0": [
-      "CVE-2023-46136"
-    ],
-    "3.0.6-r0": [
-      "CVE-2024-49767"
+    "0.7.1-r1": [
+      "RUSTSEC-2024-0404"
     ]
   },
   "apkurl": "{{urlprefix}}/{{distroversion}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk",
@@ -25,5 +19,5 @@
   ],
   "urlprefix": "https://dl-cdn.alpinelinux.org/alpine",
   "reponame": "community",
-  "distroversion": "edge"
+  "distroversion": "v3.22"
 }

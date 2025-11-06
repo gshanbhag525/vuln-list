@@ -1,14 +1,10 @@
 {
-  "name": "python3-tkinter",
+  "name": "iperf3",
   "secfixes": {
-    "3.12.11-r0": [
-      "CVE-2024-12718",
-      "CVE-2025-4138",
-      "CVE-2025-4330",
-      "CVE-2025-4517"
-    ],
-    "3.6.8-r1": [
-      "CVE-2019-5010"
+    "3.19.1-r0": [
+      "CVE-2025-54349",
+      "CVE-2025-54350",
+      "CVE-2025-54351"
     ]
   },
   "apkurl": "{{urlprefix}}/{{distroversion}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk",
@@ -24,6 +20,6 @@
     "x86_64"
   ],
   "urlprefix": "https://dl-cdn.alpinelinux.org/alpine",
-  "reponame": "community",
-  "distroversion": "edge"
+  "reponame": "main",
+  "distroversion": "v3.22"
 }

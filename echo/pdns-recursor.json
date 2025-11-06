@@ -115,5 +115,14 @@
   },
   "CVE-2024-25590": {
     "fixed_version": "4.8.8-1+deb12u1"
+  },
+  "CVE-2025-30192": {
+    "fixed_version": "5.2.4-2"
+  },
+  "CVE-2025-59023": {
+    "fixed_version": "5.2.6-0+deb13u1"
+  },
+  "CVE-2025-59024": {
+    "fixed_version": "5.2.6-0+deb13u1"
   }
 }

@@ -1,6 +1,6 @@
 {
   "CVE-2011-3389": {
-    "fixed_version": "3.8.9-e1"
+    "fixed_version": "3.8.9-3+e1"
   },
   "CVE-2012-0390": {
     "fixed_version": "3.0.11-1"
@@ -130,6 +130,18 @@
   },
   "CVE-2024-28835": {
     "fixed_version": "3.7.9-2+deb12u3"
+  },
+  "CVE-2025-32988": {
+    "fixed_version": "3.7.9-2+deb12u5"
+  },
+  "CVE-2025-32989": {
+    "fixed_version": "3.7.9-2+deb12u5"
+  },
+  "CVE-2025-32990": {
+    "fixed_version": "3.7.9-2+deb12u5"
+  },
+  "CVE-2025-6395": {
+    "fixed_version": "3.7.9-2+deb12u5"
   },
   "TEMP-0000000-1BAE4D": {
     "fixed_version": "3.4.14-1"

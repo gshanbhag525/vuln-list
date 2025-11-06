@@ -238,5 +238,23 @@
   },
   "CVE-2025-30698": {
     "fixed_version": "17.0.15+6-1~deb12u1"
+  },
+  "CVE-2025-30749": {
+    "fixed_version": "17.0.16+8-1~deb12u1"
+  },
+  "CVE-2025-30754": {
+    "fixed_version": "17.0.16+8-1~deb12u1"
+  },
+  "CVE-2025-50059": {
+    "fixed_version": "17.0.16+8-1~deb12u1"
+  },
+  "CVE-2025-50106": {
+    "fixed_version": "17.0.16+8-1~deb12u1"
+  },
+  "CVE-2025-53057": {
+    "fixed_version": "17.0.17+10-1~deb12u1"
+  },
+  "CVE-2025-53066": {
+    "fixed_version": "17.0.17+10-1~deb12u1"
   }
 }

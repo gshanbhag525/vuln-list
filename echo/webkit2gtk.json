@@ -1796,6 +1796,9 @@
   "CVE-2025-24162": {
     "fixed_version": "2.46.6-1~deb12u1"
   },
+  "CVE-2025-24189": {
+    "fixed_version": "2.48.0-1~deb12u1"
+  },
   "CVE-2025-24201": {
     "fixed_version": "2.48.0-1~deb12u1"
   },
@@ -1834,5 +1837,50 @@
   },
   "CVE-2025-31257": {
     "fixed_version": "2.48.3-1~deb12u1"
+  },
+  "CVE-2025-31273": {
+    "fixed_version": "2.48.5-1~deb12u1"
+  },
+  "CVE-2025-31278": {
+    "fixed_version": "2.48.5-1~deb12u1"
+  },
+  "CVE-2025-43211": {
+    "fixed_version": "2.48.5-1~deb12u1"
+  },
+  "CVE-2025-43212": {
+    "fixed_version": "2.48.5-1~deb12u1"
+  },
+  "CVE-2025-43216": {
+    "fixed_version": "2.48.5-1~deb12u1"
+  },
+  "CVE-2025-43227": {
+    "fixed_version": "2.48.5-1~deb12u1"
+  },
+  "CVE-2025-43228": {
+    "fixed_version": "2.48.5-1~deb12u1"
+  },
+  "CVE-2025-43240": {
+    "fixed_version": "2.48.5-1~deb12u1"
+  },
+  "CVE-2025-43265": {
+    "fixed_version": "2.48.5-1~deb12u1"
+  },
+  "CVE-2025-43272": {
+    "fixed_version": "2.50.1-1~deb12u1"
+  },
+  "CVE-2025-43342": {
+    "fixed_version": "2.50.1-1~deb12u1"
+  },
+  "CVE-2025-43343": {
+    "fixed_version": "2.50.1-1~deb12u1"
+  },
+  "CVE-2025-43356": {
+    "fixed_version": "2.50.1-1~deb12u1"
+  },
+  "CVE-2025-43368": {
+    "fixed_version": "2.50.1-1~deb12u1"
+  },
+  "CVE-2025-6558": {
+    "fixed_version": "2.48.5-1~deb12u1"
   }
 }

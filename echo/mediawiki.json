@@ -656,12 +656,20 @@
   "CVE-2024-47913": {
     "fixed_version": "1:1.39.10-1~deb12u1"
   },
-  "CVE-2025-32072": {},
+  "CVE-2025-11173": {
+    "fixed_version": "1:1.43.5+dfsg-1"
+  },
+  "CVE-2025-11261": {
+    "fixed_version": "1:1.43.5+dfsg-1"
+  },
+  "CVE-2025-32072": {
+    "fixed_version": "1:1.39.13-1~deb12u1"
+  },
   "CVE-2025-32696": {
     "fixed_version": "1:1.39.12-1~deb12u1"
   },
   "CVE-2025-32697": {
-    "fixed_version": "1:1.39.12-1~deb12u1"
+    "fixed_version": "1:1.43.1+dfsg-1"
   },
   "CVE-2025-32698": {
     "fixed_version": "1:1.39.12-1~deb12u1"
@@ -669,11 +677,59 @@
   "CVE-2025-32699": {
     "fixed_version": "1:1.39.12-1~deb12u1"
   },
-  "CVE-2025-32700": {
-    "fixed_version": "1:1.39.12-1~deb12u1"
-  },
   "CVE-2025-3469": {
     "fixed_version": "1:1.39.12-1~deb12u1"
+  },
+  "CVE-2025-61635": {
+    "fixed_version": "1:1.43.5+dfsg-1"
+  },
+  "CVE-2025-61638": {
+    "fixed_version": "1:1.43.5+dfsg-1"
+  },
+  "CVE-2025-61639": {
+    "fixed_version": "1:1.43.5+dfsg-1"
+  },
+  "CVE-2025-61640": {
+    "fixed_version": "1:1.43.5+dfsg-1"
+  },
+  "CVE-2025-61641": {
+    "fixed_version": "1:1.43.5+dfsg-1"
+  },
+  "CVE-2025-61643": {
+    "fixed_version": "1:1.43.5+dfsg-1"
+  },
+  "CVE-2025-61646": {
+    "fixed_version": "1:1.43.5+dfsg-1"
+  },
+  "CVE-2025-61653": {
+    "fixed_version": "1:1.43.5+dfsg-1"
+  },
+  "CVE-2025-61655": {
+    "fixed_version": "1:1.43.5+dfsg-1"
+  },
+  "CVE-2025-61656": {
+    "fixed_version": "1:1.43.5+dfsg-1"
+  },
+  "CVE-2025-6590": {
+    "fixed_version": "1:1.39.13-1~deb12u1"
+  },
+  "CVE-2025-6591": {
+    "fixed_version": "1:1.39.13-1~deb12u1"
+  },
+  "CVE-2025-6593": {
+    "fixed_version": "1:1.39.13-1~deb12u1"
+  },
+  "CVE-2025-6594": {
+    "fixed_version": "1:1.39.13-1~deb12u1"
+  },
+  "CVE-2025-6595": {
+    "fixed_version": "1:1.39.13-1~deb12u1"
+  },
+  "CVE-2025-6597": {
+    "fixed_version": "1:1.39.13-1~deb12u1"
+  },
+  "CVE-2025-6926": {
+    "fixed_version": "1:1.39.13-1~deb12u1"
   },
   "TEMP-0000000-8B87A6": {
     "fixed_version": "1:1.27.0-1"

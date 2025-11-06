@@ -66,6 +66,14 @@
     "0.0.14-r1": [
       "CVE-2025-22874",
       "GHSA-6f52-wpx2-hvf2"
+    ],
+    "0.0.14-r3": [
+      "CVE-2025-47907",
+      "GHSA-j5pm-7495-qmr3"
+    ],
+    "0.0.16-r1": [
+      "CVE-2025-58187",
+      "GHSA-frhw-mqj2-wxw2"
     ]
   },
   "apkurl": "{{urlprefix}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk",

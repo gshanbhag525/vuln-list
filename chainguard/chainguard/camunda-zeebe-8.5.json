@@ -1,9 +1,9 @@
 {
   "name": "camunda-zeebe-8.5",
   "secfixes": {
-    "8.5.19-r0": [
-      "CVE-2025-22233",
-      "GHSA-4wp7-92pw-q264"
+    "8.5.25-r1": [
+      "CVE-2025-8916",
+      "GHSA-4cx2-fc23-5wg6"
     ]
   },
   "apkurl": "{{urlprefix}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk",

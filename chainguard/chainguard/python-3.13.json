@@ -40,6 +40,18 @@
       "GHSA-68pj-xrp5-vccj",
       "GHSA-6r6c-684h-9j7p",
       "GHSA-p72v-37h5-753v"
+    ],
+    "3.13.5-r1": [
+      "CVE-2025-6069",
+      "GHSA-j5cc-6rx8-ff96"
+    ],
+    "3.13.6-r0": [
+      "CVE-2025-8194",
+      "GHSA-v594-44hm-2j7p"
+    ],
+    "3.13.8-r1": [
+      "CVE-2025-8291",
+      "GHSA-49g5-f6qw-8mm7"
     ]
   },
   "apkurl": "{{urlprefix}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk",

@@ -86,6 +86,17 @@
     "2.7.2-r2": [
       "CVE-2025-22872",
       "GHSA-vvgc-356p-c3xw"
+    ],
+    "2.8.1-r1": [
+      "GHSA-fv92-fjc5-jj9h"
+    ],
+    "2.8.2-r2": [
+      "CVE-2025-47910",
+      "GHSA-8pjc-487g-w6p2"
+    ],
+    "2.9.0-r1": [
+      "CVE-2025-58187",
+      "GHSA-frhw-mqj2-wxw2"
     ]
   },
   "apkurl": "{{urlprefix}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk",

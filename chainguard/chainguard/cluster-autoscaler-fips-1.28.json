@@ -5,7 +5,9 @@
       "CVE-2023-45142",
       "CVE-2024-9042",
       "CVE-2025-1767",
+      "CVE-2025-47907",
       "GHSA-3wgm-2gw2-vh5m",
+      "GHSA-j5pm-7495-qmr3",
       "GHSA-rcjv-mgp8-qvmr",
       "GHSA-vv39-3w5q-974q"
     ],
@@ -95,6 +97,10 @@
       "CVE-2025-4673",
       "GHSA-62jj-gr2r-5c34",
       "GHSA-6f52-wpx2-hvf2"
+    ],
+    "1.28.7-r14": [
+      "CVE-2025-47906",
+      "GHSA-gwrf-jf3h-w649"
     ],
     "1.28.7-r2": [
       "CVE-2024-45338",

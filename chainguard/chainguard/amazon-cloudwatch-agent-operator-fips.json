@@ -3,7 +3,9 @@
   "secfixes": {
     "0": [
       "CVE-2019-3826",
-      "GHSA-3m87-5598-2v4f"
+      "CVE-2025-47907",
+      "GHSA-3m87-5598-2v4f",
+      "GHSA-j5pm-7495-qmr3"
     ],
     "2.0.0-r1": [
       "CVE-2024-45337",
@@ -42,6 +44,13 @@
       "CVE-2025-4673",
       "GHSA-62jj-gr2r-5c34",
       "GHSA-6f52-wpx2-hvf2"
+    ],
+    "3.1.0-r1": [
+      "GHSA-fv92-fjc5-jj9h"
+    ],
+    "3.3.0-r1": [
+      "CVE-2025-58187",
+      "GHSA-frhw-mqj2-wxw2"
     ]
   },
   "apkurl": "{{urlprefix}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk",

@@ -1,0 +1,20 @@
+{
+  "name": "corretto-25",
+  "secfixes": {
+    "25.0.1.8.1-r0": [
+      "CVE-2025-53057",
+      "CVE-2025-53066",
+      "CVE-2025-61748",
+      "GHSA-5ccw-23gm-2h2f",
+      "GHSA-6ch4-24w6-v6jv",
+      "GHSA-9v5j-pxpg-qprp"
+    ]
+  },
+  "apkurl": "{{urlprefix}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk",
+  "archs": [
+    "aarch64",
+    "x86_64"
+  ],
+  "urlprefix": "https://packages.cgr.dev",
+  "reponame": "chainguard"
+}

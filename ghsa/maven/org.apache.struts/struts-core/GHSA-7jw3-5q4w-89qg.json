@@ -23,9 +23,6 @@
         "Url": "https://security-tracker.debian.org/tracker/CVE-2016-1181"
       },
       {
-        "Url": "https://security.netapp.com/advisory/ntap-20180629-0006/"
-      },
-      {
         "Url": "https://www.oracle.com/security-alerts/cpujan2020.html"
       },
       {
@@ -62,6 +59,9 @@
         "Url": "http://www.oracle.com/technetwork/security-advisory/cpuoct2016-2881722.html"
       },
       {
+        "Url": "https://security.netapp.com/advisory/ntap-20180629-0006"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-7jw3-5q4w-89qg"
       }
     ],
@@ -80,7 +80,7 @@
     "PublishedAt": "2022-05-13T01:25:20Z",
     "Severity": "HIGH",
     "Summary": "Improper Input Validation in Apache Struts",
-    "UpdatedAt": "2023-01-27T05:02:15Z",
+    "UpdatedAt": "2025-10-13T12:03:01Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 8.1,

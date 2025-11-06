@@ -17,6 +17,15 @@
         "Url": "http://spring.io/security/cve-2025-41232"
       },
       {
+        "Url": "https://github.com/spring-projects/spring-security/commit/bf2aaa1b1830e534ba651d422545ac08a115151b"
+      },
+      {
+        "Url": "https://github.com/spring-projects/spring-security/commit/c972de5369a1261ab674a3f5e3a80e8ce3e8cdfb"
+      },
+      {
+        "Url": "https://github.com/spring-projects/spring-security/releases/tag/6.4.6"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-9pp5-9c7g-4r83"
       }
     ],
@@ -35,7 +44,7 @@
     "PublishedAt": "2025-05-21T15:30:33Z",
     "Severity": "CRITICAL",
     "Summary": "Spring Security authorization bypass for method security annotations on private methods",
-    "UpdatedAt": "2025-05-21T18:31:29Z",
+    "UpdatedAt": "2025-10-15T20:13:16Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 9.1,

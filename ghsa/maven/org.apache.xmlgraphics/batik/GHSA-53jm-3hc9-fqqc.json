@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2022-09-23T20:57:47Z",
+  "UpdatedAt": "2025-09-24T20:37:34Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.apache.xmlgraphics:batik"
@@ -26,6 +26,12 @@
         "Url": "https://security.gentoo.org/glsa/202401-11"
       },
       {
+        "Url": "https://github.com/apache/xmlgraphics-batik/commit/996aa8897c208be11ce65cef00c9576a299b2637"
+      },
+      {
+        "Url": "https://lists.debian.org/debian-lts-announce/2025/07/msg00006.html"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-53jm-3hc9-fqqc"
       }
     ],
@@ -39,12 +45,12 @@
         "Value": "CVE-2022-38648"
       }
     ],
-    "Description": "Server-Side Request Forgery (SSRF) vulnerability in Batik of Apache XML Graphics allows an attacker to fetch external resources. This issue affects Apache XML Graphics Batik 1.14.",
+    "Description": "Server-Side Request Forgery (SSRF) vulnerability in Batik of Apache XML Graphics allows an attacker to fetch external resources. This issue affects Apache XML Graphics Batik Bridge versions 1.14 and below.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-09-23T00:00:40Z",
     "Severity": "MODERATE",
     "Summary": "Apache Batik vulnerable to Server-Side Request Forgery",
-    "UpdatedAt": "2024-01-08T15:35:19Z",
+    "UpdatedAt": "2025-11-03T21:31:46Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.3,
@@ -56,7 +62,7 @@
       "FirstPatchedVersion": {
         "Identifier": "1.15"
       },
-      "VulnerableVersionRange": "\u003e= 1.0, \u003c 1.15"
+      "VulnerableVersionRange": "\u003c 1.15"
     }
   ]
 }

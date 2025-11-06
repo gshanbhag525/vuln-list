@@ -17,9 +17,6 @@
         "Url": "https://en.osdn.jp/projects/terasoluna/wiki/StrutsPatch2-EN"
       },
       {
-        "Url": "https://security.netapp.com/advisory/ntap-20180629-0006/"
-      },
-      {
         "Url": "http://jvn.jp/en/jp/JVN86448949/index.html"
       },
       {
@@ -30,6 +27,9 @@
       },
       {
         "Url": "http://www.oracle.com/technetwork/security-advisory/cpuoct2017-3236626.html"
+      },
+      {
+        "Url": "https://security.netapp.com/advisory/ntap-20180629-0006"
       },
       {
         "Url": "https://github.com/advisories/GHSA-cvvx-r33m-v7pq"
@@ -50,7 +50,7 @@
     "PublishedAt": "2022-05-14T03:15:11Z",
     "Severity": "HIGH",
     "Summary": "Improper Input Validation in Apache Struts",
-    "UpdatedAt": "2023-01-27T05:02:25Z",
+    "UpdatedAt": "2025-10-13T11:59:12Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.5,

@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2025-06-16T17:50:10Z",
+  "UpdatedAt": "2025-08-08T19:00:51Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.apache.tomcat:tomcat-catalina"
@@ -38,6 +38,9 @@
         "Url": "http://www.openwall.com/lists/oss-security/2025/06/16/1"
       },
       {
+        "Url": "https://lists.debian.org/debian-lts-announce/2025/07/msg00009.html"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-h3gc-qfqq-6h8f"
       }
     ],
@@ -51,19 +54,25 @@
         "Value": "CVE-2025-48988"
       }
     ],
-    "Description": "Allocation of Resources Without Limits or Throttling vulnerability in Apache Tomcat.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.7, from 10.1.0-M1 through 10.1.41, from 9.0.0.M1 through 9.0.105.\n\nUsers are recommended to upgrade to version 11.0.8, 10.1.42 or 9.0.106, which fix the issue.",
+    "Description": "Allocation of Resources Without Limits or Throttling vulnerability in Apache Tomcat.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.7, from 10.1.0-M1 through 10.1.41, from 9.0.0.M1 through 9.0.105. The following versions were EOL at the time the CVE was created but are known to be affected: 8.5.0 though 8.5.100. Other, older, EOL versions may also be affected.\n\nUsers are recommended to upgrade to version 11.0.8, 10.1.42 or 9.0.106, which fix the issue.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2025-06-16T15:32:28Z",
     "Severity": "HIGH",
     "Summary": "Apache Tomcat - DoS in multipart upload",
-    "UpdatedAt": "2025-06-16T21:46:23Z",
+    "UpdatedAt": "2025-11-03T21:34:01Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
     }
   },
   "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": ""
+      },
+      "VulnerableVersionRange": "\u003e= 8.5.0, \u003c= 8.5.100"
+    },
     {
       "FirstPatchedVersion": {
         "Identifier": "9.0.106"

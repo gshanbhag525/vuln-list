@@ -38,7 +38,7 @@
     "PublishedAt": "2021-04-13T15:28:01Z",
     "Severity": "HIGH",
     "Summary": "Cross-site Scripting (XSS) in @scullyio/scully",
-    "UpdatedAt": "2023-02-01T05:05:18Z",
+    "UpdatedAt": "2025-10-20T19:43:53Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.3,

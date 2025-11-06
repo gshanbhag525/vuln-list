@@ -71,7 +71,7 @@
     "PublishedAt": "2025-06-03T21:30:39Z",
     "Severity": "MODERATE",
     "Summary": "Hibernate Validator may interpolate user-supplied input in a constraint violation message with Expression Language",
-    "UpdatedAt": "2025-06-05T01:24:19Z",
+    "UpdatedAt": "2025-09-12T20:17:37Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.3,

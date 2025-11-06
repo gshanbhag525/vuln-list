@@ -26,6 +26,9 @@
         "Url": "https://issues.apache.org/jira/browse/AMQ-6596"
       },
       {
+        "Url": "https://lists.debian.org/debian-lts-announce/2025/06/msg00020.html"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-whxr-3p84-rf3c"
       }
     ],
@@ -44,11 +47,11 @@
     "PublishedAt": "2025-05-07T09:31:19Z",
     "Severity": "MODERATE",
     "Summary": "Apache ActiveMQ: Unchecked buffer length can cause excessive memory allocation",
-    "UpdatedAt": "2025-05-07T15:25:43Z",
+    "UpdatedAt": "2025-11-03T21:34:51Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
     }
   },
   "Versions": [

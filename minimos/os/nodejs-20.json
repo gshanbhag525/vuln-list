@@ -1,6 +1,10 @@
 {
   "name": "nodejs-20",
   "secfixes": {
+    "0": [
+      "CVE-2024-3566",
+      "GHSA-9xch-xvj3-fmf3"
+    ],
     "20.18.2-r0": [
       "CVE-2025-23083",
       "CVE-2025-23084",
@@ -18,6 +22,10 @@
       "GHSA-gcf6-vgcr-474f",
       "GHSA-hchw-qwx7-4w4c",
       "GHSA-rrjv-57mm-j6cm"
+    ],
+    "20.19.4-r0": [
+      "CVE-2025-27210",
+      "GHSA-x33r-pvvq-wjrh"
     ]
   },
   "apkurl": "{{urlprefix}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk",

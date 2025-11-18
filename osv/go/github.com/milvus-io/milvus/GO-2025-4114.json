@@ -1,7 +1,11 @@
 {
   "id": "GO-2025-4114",
-  "modified": "2025-11-17T19:11:25Z",
+  "modified": "2025-11-17T19:58:35.751759Z",
   "published": "2025-11-17T19:11:25Z",
+  "aliases": [
+    "CVE-2025-64513",
+    "GHSA-mhjq-8c7m-3f7p"
+  ],
   "summary": "Milvus Proxy has a Critical Authentication Bypass Vulnerability in github.com/milvus-io/milvus",
   "details": "Milvus Proxy has a Critical Authentication Bypass Vulnerability in github.com/milvus-io/milvus.\n\nNOTE: The source advisory for this report contains additional versions that could not be automatically mapped to standard Go module versions.\n\n(If this is causing false-positive reports from vulnerability scanners, please suggest an edit to the report.)\n\nThe additional affected modules and versions are: github.com/milvus-io/milvus before v2.4.24, from v2.5.0 before v2.5.21, from v2.6.0 before v2.6.5.",
   "affected": [

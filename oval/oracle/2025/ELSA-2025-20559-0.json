@@ -9,6 +9,11 @@
       "Source": "elsa",
       "URI": "https://linux.oracle.com/errata/ELSA-2025-20559-0.html",
       "ID": "ELSA-2025-20559-0"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2024-56433.html",
+      "ID": "CVE-2024-56433"
     }
   ],
   "Criteria": {
@@ -23,18 +28,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "shadow-utils-subid-devel is earlier than 2:4.9-15.el9"
-                      },
-                      {
-                        "Comment": "shadow-utils-subid-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -56,6 +49,18 @@
                       },
                       {
                         "Comment": "shadow-utils-subid is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "shadow-utils-subid-devel is earlier than 2:4.9-15.el9"
+                      },
+                      {
+                        "Comment": "shadow-utils-subid-devel is signed with the Oracle Linux 9 key"
                       }
                     ]
                   }
@@ -80,18 +85,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "shadow-utils-subid-devel is earlier than 2:4.9-15.el9"
-                      },
-                      {
-                        "Comment": "shadow-utils-subid-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "shadow-utils is earlier than 2:4.9-15.el9"
                       },
                       {
@@ -108,6 +101,18 @@
                       },
                       {
                         "Comment": "shadow-utils-subid is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "shadow-utils-subid-devel is earlier than 2:4.9-15.el9"
+                      },
+                      {
+                        "Comment": "shadow-utils-subid-devel is signed with the Oracle Linux 9 key"
                       }
                     ]
                   }
@@ -132,7 +137,13 @@
     ]
   },
   "Severity": "LOW",
-  "Cves": null,
+  "Cves": [
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2024-56433.html",
+      "ID": "CVE-2024-56433"
+    }
+  ],
   "Issued": {
     "Date": "2025-11-17"
   }

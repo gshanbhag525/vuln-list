@@ -1,0 +1,79 @@
+{
+  "Title": "ELSA-2025-21842:  thunderbird security update (IMPORTANT)",
+  "Description": "[140.5.0-1.0.1]\n- Fix prefs for new nss [Orabug: 37079813]\n- Add Oracle prefs\n\n[140.5.0-1]\n- Update to 140.5.0 ESR",
+  "Platform": [
+    "Oracle Linux 9"
+  ],
+  "References": [
+    {
+      "Source": "elsa",
+      "URI": "https://linux.oracle.com/errata/ELSA-2025-21842.html",
+      "ID": "ELSA-2025-21842"
+    }
+  ],
+  "Criteria": {
+    "Operator": "AND",
+    "Criterias": [
+      {
+        "Operator": "OR",
+        "Criterias": [
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "thunderbird is earlier than 0:140.5.0-1.0.1.el9_7"
+                  },
+                  {
+                    "Comment": "thunderbird is signed with the Oracle Linux 9 key"
+                  }
+                ]
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is aarch64"
+              }
+            ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "thunderbird is earlier than 0:140.5.0-1.0.1.el9_7"
+                  },
+                  {
+                    "Comment": "thunderbird is signed with the Oracle Linux 9 key"
+                  }
+                ]
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is x86_64"
+              }
+            ]
+          }
+        ],
+        "Criterions": null
+      }
+    ],
+    "Criterions": [
+      {
+        "Comment": "Oracle Linux 9 is installed"
+      }
+    ]
+  },
+  "Severity": "IMPORTANT",
+  "Cves": null,
+  "Issued": {
+    "Date": "2025-11-25"
+  }
+}

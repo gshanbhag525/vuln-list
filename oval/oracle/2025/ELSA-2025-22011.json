@@ -9,6 +9,16 @@
       "Source": "elsa",
       "URI": "https://linux.oracle.com/errata/ELSA-2025-22011.html",
       "ID": "ELSA-2025-22011"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2025-52881.html",
+      "ID": "CVE-2025-52881"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2025-58183.html",
+      "ID": "CVE-2025-58183"
     }
   ],
   "Criteria": {
@@ -108,7 +118,18 @@
     ]
   },
   "Severity": "IMPORTANT",
-  "Cves": null,
+  "Cves": [
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2025-52881.html",
+      "ID": "CVE-2025-52881"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2025-58183.html",
+      "ID": "CVE-2025-58183"
+    }
+  ],
   "Issued": {
     "Date": "2025-11-25"
   }

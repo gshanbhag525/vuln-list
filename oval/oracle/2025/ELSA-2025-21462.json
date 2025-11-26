@@ -9,6 +9,11 @@
       "Source": "elsa",
       "URI": "https://linux.oracle.com/errata/ELSA-2025-21462.html",
       "ID": "ELSA-2025-21462"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2025-47151.html",
+      "ID": "CVE-2025-47151"
     }
   ],
   "Criteria": {
@@ -132,7 +137,13 @@
     ]
   },
   "Severity": "CRITICAL",
-  "Cves": null,
+  "Cves": [
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2025-47151.html",
+      "ID": "CVE-2025-47151"
+    }
+  ],
   "Issued": {
     "Date": "2025-11-25"
   }

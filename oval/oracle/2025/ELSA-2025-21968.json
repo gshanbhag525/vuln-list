@@ -9,6 +9,41 @@
       "Source": "elsa",
       "URI": "https://linux.oracle.com/errata/ELSA-2025-21968.html",
       "ID": "ELSA-2025-21968"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2025-10920.html",
+      "ID": "CVE-2025-10920"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2025-10921.html",
+      "ID": "CVE-2025-10921"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2025-10922.html",
+      "ID": "CVE-2025-10922"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2025-10923.html",
+      "ID": "CVE-2025-10923"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2025-10924.html",
+      "ID": "CVE-2025-10924"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2025-10925.html",
+      "ID": "CVE-2025-10925"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2025-10934.html",
+      "ID": "CVE-2025-10934"
     }
   ],
   "Criteria": {
@@ -108,7 +143,43 @@
     ]
   },
   "Severity": "IMPORTANT",
-  "Cves": null,
+  "Cves": [
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2025-10920.html",
+      "ID": "CVE-2025-10920"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2025-10921.html",
+      "ID": "CVE-2025-10921"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2025-10922.html",
+      "ID": "CVE-2025-10922"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2025-10923.html",
+      "ID": "CVE-2025-10923"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2025-10924.html",
+      "ID": "CVE-2025-10924"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2025-10925.html",
+      "ID": "CVE-2025-10925"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2025-10934.html",
+      "ID": "CVE-2025-10934"
+    }
+  ],
   "Issued": {
     "Date": "2025-11-25"
   }

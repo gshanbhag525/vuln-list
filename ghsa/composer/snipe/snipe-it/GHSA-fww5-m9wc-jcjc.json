@@ -41,11 +41,11 @@
     "PublishedAt": "2025-12-01T21:30:26Z",
     "Severity": "MODERATE",
     "Summary": "Snipe-IT is vulnerable to stored cross-site scripting",
-    "UpdatedAt": "2025-12-02T16:54:42Z",
+    "UpdatedAt": "2025-12-04T22:49:50Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 5.4,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
     }
   },
   "Versions": [

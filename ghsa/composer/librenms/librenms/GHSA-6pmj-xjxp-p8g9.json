@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2025-11-18T18:48:03Z",
+  "UpdatedAt": "2025-12-05T18:31:54Z",
   "Package": {
     "Ecosystem": "COMPOSER",
     "Name": "librenms/librenms"
@@ -35,7 +35,7 @@
     "PublishedAt": "2025-11-18T18:48:01Z",
     "Severity": "MODERATE",
     "Summary": "LibreNMS is vulnerable to SQL Injection (Boolean-Based Blind) in hostname parameter in ajax_output.php endpoint",
-    "UpdatedAt": "2025-11-19T14:24:57Z",
+    "UpdatedAt": "2025-12-05T18:31:54Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.5,
@@ -45,7 +45,7 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "25.11.0"
       },
       "VulnerableVersionRange": "\u003c= 25.10.0"
     }
